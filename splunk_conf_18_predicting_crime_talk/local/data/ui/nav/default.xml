@@ -1,0 +1,25 @@
+<nav search_view="search">
+  <view name="search" />
+  <view name="datasets" default='true' />
+  <collection label="Pre Processing Dashboards">
+       <view name="preprocessing_by_anomaly_score"></view>
+       <view name="preprocessing_by_k_means_clustering"></view>
+       <view name="preprocessing_by_prediction_ability"></view>
+   
+    </collection>
+  <collection label="Prediction Models">
+       <view name="crime_prediction_model_per_lsoa_linear_regression"></view>
+           <view name="crime_prediction_model_per_lsoa_decisiontreeregressor"></view>
+           <view name="crime_prediction_model_per_lsoa_lasso"></view>
+
+              <view name="crime_prediction_model_per_lsoa_ridge"></view>
+
+    </collection>
+  
+    <view name="crime_prediction_for_next_year_using_decision_tree_regressor_algorithm" />
+
+  
+</nav>
+
+
+

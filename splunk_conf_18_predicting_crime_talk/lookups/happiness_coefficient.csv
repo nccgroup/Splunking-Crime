@@ -1,0 +1,688 @@
+﻿Borough name,Ward Code,Ward name,,,happiness_coefficient_year_minus_3,happiness_coefficient_year_minus_2,happiness_coefficient_year_minus_1,happiness_coefficient_now,happiness_coefficient_2012
+City of London,E09000001,City of London,,,10,8,9,8,8
+Barking and Dagenham,E05000026,Abbey,,,-3,-2,-2,-3,-4
+Barking and Dagenham,E05000027,Alibon,,,-9,-8,-8,-8,-10
+Barking and Dagenham,E05000028,Becontree,,,-7,-8,-8,-8,-10
+Barking and Dagenham,E05000029,Chadwell Heath,,,-7,-12,-8,-10,-11
+Barking and Dagenham,E05000030,Eastbrook,,,-3,-1,-3,-2,-5
+Barking and Dagenham,E05000031,Eastbury,,,-5,-6,-5,-6,-8
+Barking and Dagenham,E05000032,Gascoigne,,,-9,-10,-10,-10,-9
+Barking and Dagenham,E05000033,Goresbrook,,,-10,-8,-8,-10,-6
+Barking and Dagenham,E05000034,Heath,,,-8,-9,-9,-10,-9
+Barking and Dagenham,E05000035,Longbridge,,,4,2,1,2,1
+Barking and Dagenham,E05000036,Mayesbrook,,,-8,-8,-6,-7,-9
+Barking and Dagenham,E05000037,Parsloes,,,-5,-6,-6,-5,-8
+Barking and Dagenham,E05000038,River,,,-5,-5,-6,-7,-8
+Barking and Dagenham,E05000039,Thames,,,-11,-8,-10,-9,-8
+Barking and Dagenham,E05000040,Valence,,,-7,-7,-8,-7,-9
+Barking and Dagenham,E05000041,Village,,,-11,-9,-11,-12,-10
+Barking and Dagenham,E05000042,Whalebone,,,-4,-3,-4,-4,-4
+Barnet,E05000043,Brunswick Park,,,5,5,4,5,4
+Barnet,E05000044,Burnt Oak,,,-6,-5,-5,-5,-6
+Barnet,E05000045,Childs Hill,,,0,0,0,-1,1
+Barnet,E05000046,Colindale,,,-3,-4,-4,-3,-2
+Barnet,E05000047,Coppetts,,,-1,-1,-2,-1,-1
+Barnet,E05000048,East Barnet,,,4,4,2,2,3
+Barnet,E05000049,East Finchley,,,3,2,0,1,2
+Barnet,E05000050,Edgware,,,0,1,0,1,1
+Barnet,E05000051,Finchley Church End,,,6,4,5,4,6
+Barnet,E05000052,Garden Suburb,,,11,11,10,11,9
+Barnet,E05000053,Golders Green,,,2,2,1,0,1
+Barnet,E05000054,Hale,,,0,0,0,0,0
+Barnet,E05000055,Hendon,,,2,1,0,1,1
+Barnet,E05000056,High Barnet,,,6,6,6,6,6
+Barnet,E05000057,Mill Hill,,,3,3,3,4,2
+Barnet,E05000058,Oakleigh,,,4,5,3,3,3
+Barnet,E05000059,Totteridge,,,9,8,8,8,8
+Barnet,E05000060,Underhill,,,1,2,0,-1,-2
+Barnet,E05000061,West Finchley,,,3,3,3,3,3
+Barnet,E05000062,West Hendon,,,0,0,0,1,2
+Barnet,E05000063,Woodhouse,,,2,2,1,1,0
+Bexley,E05000064,Barnehurst,,,3,3,4,3,4
+Bexley,E05000065,Belvedere,,,-2,-1,-1,0,-3
+Bexley,E05000066,Blackfen and Lamorbey,,,7,7,7,7,7
+Bexley,E05000067,Blendon and Penhill,,,7,8,6,7,8
+Bexley,E05000068,Brampton,,,5,5,6,5,6
+Bexley,E05000069,Christchurch,,,3,4,4,5,4
+Bexley,E05000070,Colyers,,,-4,-4,-3,-4,-4
+Bexley,E05000071,Crayford,,,-3,-3,-2,-2,-1
+Bexley,E05000072,Cray Meadows,,,-1,-2,0,0,1
+Bexley,E05000073,Danson Park,,,7,5,5,5,5
+Bexley,E05000074,East Wickham,,,1,1,1,2,3
+Bexley,E05000075,Erith,,,-3,-2,-3,-3,-3
+Bexley,E05000076,Falconwood and Welling,,,5,6,4,6,5
+Bexley,E05000077,Lesnes Abbey,,,-1,0,0,2,1
+Bexley,E05000078,Longlands,,,7,5,6,7,6
+Bexley,E05000079,North End,,,-13,-14,-9,-12,-8
+Bexley,E05000080,Northumberland Heath,,,2,3,3,2,0
+Bexley,E05000081,St Mary's,,,10,10,10,10,9
+Bexley,E05000082,St Michael's,,,3,3,4,4,4
+Bexley,E05000083,Sidcup,,,7,6,6,7,8
+Bexley,E05000084,Thamesmead East,,,-6,-7,-5,-4,-3
+Brent,E05000085,Alperton,,,0,1,-1,0,-1
+Brent,E05000086,Barnhill,,,-1,-2,-2,-2,-3
+Brent,E05000087,Brondesbury Park,,,2,1,0,-2,-2
+Brent,E05000088,Dollis Hill,,,-2,-1,-3,-3,-1
+Brent,E05000089,Dudden Hill,,,-3,-2,-3,-4,-4
+Brent,E05000090,Fryent,,,3,4,3,2,3
+Brent,E05000091,Harlesden,,,-10,-11,-12,-12,-13
+Brent,E05000092,Kensal Green,,,-4,-5,-7,-7,-5
+Brent,E05000093,Kenton,,,6,6,7,6,5
+Brent,E05000094,Kilburn,,,-8,-9,-8,-8,-6
+Brent,E05000095,Mapesbury,,,-2,0,-2,-2,-3
+Brent,E05000096,Northwick Park,,,4,4,4,3,3
+Brent,E05000097,Preston,,,2,1,1,0,-1
+Brent,E05000098,Queens Park,,,1,1,0,0,2
+Brent,E05000099,Queensbury,,,2,2,1,2,2
+Brent,E05000100,Stonebridge,,,-12,-12,-13,-13,-11
+Brent,E05000101,Sudbury,,,2,2,1,1,0
+Brent,E05000102,Tokyngton,,,0,-1,-1,0,-3
+Brent,E05000103,Welsh Harp,,,-1,-1,-2,-1,-3
+Brent,E05000104,Wembley Central,,,-2,-2,-2,-1,0
+Brent,E05000105,Willesden Green,,,-3,-4,-6,-4,-5
+Bromley,E05000106,Bickley,,,7,7,7,7,8
+Bromley,E05000107,Biggin Hill,,,7,8,7,6,5
+Bromley,E05000108,Bromley Common and Keston,,,7,7,6,5,7
+Bromley,E05000109,Bromley Town,,,4,5,5,5,7
+Bromley,E05000110,Chelsfield and Pratts Bottom,,,9,9,8,9,8
+Bromley,E05000111,Chislehurst,,,7,6,6,4,7
+Bromley,E05000112,Clock House,,,4,3,4,4,4
+Bromley,E05000113,Copers Cope,,,3,4,3,3,4
+Bromley,E05000114,Cray Valley East,,,-8,-7,-11,-10,-7
+Bromley,E05000115,Cray Valley West,,,-7,-6,-9,-7,-5
+Bromley,E05000116,Crystal Palace,,,-8,-8,-11,-8,-4
+Bromley,E05000117,Darwin,,,4,6,4,5,4
+Bromley,E05000118,Farnborough and Crofton,,,10,10,10,11,7
+Bromley,E05000119,Hayes and Coney Hall,,,12,12,11,12,11
+Bromley,E05000120,Kelsey and Eden Park,,,7,7,6,7,7
+Bromley,E05000121,Mottingham and Chislehurst North,,,-6,-8,-5,-8,-7
+Bromley,E05000122,Orpington,,,0,2,2,0,0
+Bromley,E05000123,Penge and Cator,,,-4,-4,-5,-3,-3
+Bromley,E05000124,Petts Wood and Knoll,,,11,11,11,10,10
+Bromley,E05000125,Plaistow and Sundridge,,,1,2,0,0,3
+Bromley,E05000126,Shortlands,,,10,10,10,11,11
+Bromley,E05000127,West Wickham,,,11,11,10,11,12
+Camden,E05000128,Belsize,,,5,4,2,3,3
+Camden,E05000129,Bloomsbury,,,5,4,5,5,3
+Camden,E05000130,Camden Town with Primrose Hill,,,-2,-1,-2,-3,-2
+Camden,E05000131,Cantelowes,,,-2,-1,-4,-2,-3
+Camden,E05000132,Fortune Green,,,-1,0,-1,-2,2
+Camden,E05000133,Frognal and Fitzjohns,,,8,8,7,8,8
+Camden,E05000134,Gospel Oak,,,-4,-4,-5,-3,-2
+Camden,E05000135,Hampstead Town,,,8,6,4,8,9
+Camden,E05000136,Haverstock,,,-8,-7,-7,-7,-6
+Camden,E05000137,Highgate,,,4,3,2,5,2
+Camden,E05000138,Holborn and Covent Garden,,,0,0,0,1,0
+Camden,E05000139,Kentish Town,,,-3,-2,-3,-1,-2
+Camden,E05000140,Kilburn,,,-7,-9,-8,-8,-7
+Camden,E05000141,King's Cross,,,-3,-1,-3,0,0
+Camden,E05000142,Regent's Park,,,-3,-3,-2,-1,-1
+Camden,E05000143,St Pancras and Somers Town,,,-6,-4,-5,-3,-4
+Camden,E05000144,Swiss Cottage,,,2,2,3,2,4
+Camden,E05000145,West Hampstead,,,0,1,1,0,1
+Croydon,E05000146,Addiscombe,,,-2,0,-2,-1,-3
+Croydon,E05000147,Ashburton,,,-1,-1,-1,-1,-2
+Croydon,E05000148,Bensham Manor,,,-2,-3,-4,-3,-4
+Croydon,E05000149,Broad Green,,,-7,-7,-9,-9,-10
+Croydon,E05000150,Coulsdon East,,,6,8,7,8,7
+Croydon,E05000151,Coulsdon West,,,5,4,6,5,6
+Croydon,E05000152,Croham,,,3,4,3,1,0
+Croydon,E05000153,Fairfield,,,-1,0,0,-2,-2
+Croydon,E05000154,Fieldway,,,-21,-13,-14,-15,-14
+Croydon,E05000155,Heathfield,,,3,2,2,2,2
+Croydon,E05000156,Kenley,,,3,3,3,3,4
+Croydon,E05000157,New Addington,,,-11,-9,-10,-11,-10
+Croydon,E05000158,Norbury,,,2,1,1,0,-1
+Croydon,E05000159,Purley,,,5,4,4,4,4
+Croydon,E05000160,Sanderstead,,,8,7,7,7,8
+Croydon,E05000161,Selhurst,,,-7,-8,-9,-9,-9
+Croydon,E05000162,Selsdon and Ballards,,,8,9,8,8,8
+Croydon,E05000163,Shirley,,,4,3,1,2,1
+Croydon,E05000164,South Norwood,,,-3,-3,-4,-4,-7
+Croydon,E05000165,Thornton Heath,,,-8,-9,-9,-9,-7
+Croydon,E05000166,Upper Norwood,,,-4,-4,-4,-3,-5
+Croydon,E05000167,Waddon,,,-3,-3,-3,-4,-4
+Croydon,E05000168,West Thornton,,,-5,-5,-5,-6,-6
+Croydon,E05000169,Woodside,,,-5,-3,-4,-2,-5
+Ealing,E05000170,Acton Central,,,1,0,-1,-1,0
+Ealing,E05000171,Cleveland,,,5,4,3,3,4
+Ealing,E05000172,Dormers Wells,,,-2,-2,-2,-2,0
+Ealing,E05000173,Ealing Broadway,,,4,5,4,6,5
+Ealing,E05000174,Ealing Common,,,3,3,2,2,2
+Ealing,E05000175,East Acton,,,-1,-1,-2,-3,-1
+Ealing,E05000176,Elthorne,,,1,0,0,0,1
+Ealing,E05000177,Greenford Broadway,,,-5,-4,-5,-5,-3
+Ealing,E05000178,Greenford Green,,,3,3,3,3,4
+Ealing,E05000179,Hanger Hill,,,5,6,5,5,6
+Ealing,E05000180,Hobbayne,,,3,2,2,1,2
+Ealing,E05000181,Lady Margaret,,,3,2,2,2,3
+Ealing,E05000182,Northfield,,,9,8,9,8,11
+Ealing,E05000183,North Greenford,,,2,2,1,2,4
+Ealing,E05000184,Northolt Mandeville,,,-1,0,-1,-2,-1
+Ealing,E05000185,Northolt West End,,,-5,-5,-6,-4,-3
+Ealing,E05000186,Norwood Green,,,-3,-4,-3,-3,-4
+Ealing,E05000187,Perivale,,,2,1,1,0,2
+Ealing,E05000188,South Acton,,,-2,-2,-2,-3,-1
+Ealing,E05000189,Southall Broadway,,,-2,-3,-4,-5,-4
+Ealing,E05000190,Southall Green,,,-2,-4,-3,-2,-4
+Ealing,E05000191,Southfield,,,4,4,3,4,5
+Ealing,E05000192,Walpole,,,7,7,7,7,7
+Enfield,E05000193,Bowes,,,-3,-3,-3,-4,-2
+Enfield,E05000194,Bush Hill Park,,,4,3,3,3,1
+Enfield,E05000195,Chase,,,-3,-3,-4,-4,-5
+Enfield,E05000196,Cockfosters,,,5,5,4,4,4
+Enfield,E05000197,Edmonton Green,,,-9,-10,-10,-13,-14
+Enfield,E05000198,Enfield Highway,,,-5,-6,-7,-8,-8
+Enfield,E05000199,Enfield Lock,,,-7,-8,-8,-11,-11
+Enfield,E05000200,Grange,,,5,5,4,6,4
+Enfield,E05000201,Haselbury,,,-5,-5,-7,-8,-9
+Enfield,E05000202,Highlands,,,6,7,5,4,2
+Enfield,E05000203,Jubilee,,,-4,-5,-5,-6,-6
+Enfield,E05000204,Lower Edmonton,,,-7,-8,-9,-8,-10
+Enfield,E05000205,Palmers Green,,,0,-1,-1,-1,-2
+Enfield,E05000206,Ponders End,,,-6,-7,-8,-9,-8
+Enfield,E05000207,Southbury,,,-3,-5,-5,-5,-7
+Enfield,E05000208,Southgate,,,5,4,4,4,3
+Enfield,E05000209,Southgate Green,,,3,2,1,2,2
+Enfield,E05000210,Town,,,5,4,3,4,2
+Enfield,E05000211,Turkey Street,,,-8,-9,-10,-11,-12
+Enfield,E05000212,Upper Edmonton,,,-7,-8,-9,-10,-13
+Enfield,E05000213,Winchmore Hill,,,6,4,5,4,3
+Greenwich,E05000214,Abbey Wood,,,-7,-6,-7,-5,-5
+Greenwich,E05000215,Blackheath Westcombe,,,1,2,0,2,1
+Greenwich,E05000216,Charlton,,,-4,-5,-5,-5,-5
+Greenwich,E05000217,Coldharbour and New Eltham,,,0,1,0,0,0
+Greenwich,E05000218,Eltham North,,,5,6,5,5,6
+Greenwich,E05000219,Eltham South,,,0,1,0,0,0
+Greenwich,E05000220,Eltham West,,,-7,-8,-7,-6,-4
+Greenwich,E05000221,Glyndon,,,-6,-8,-9,-7,-8
+Greenwich,E05000222,Greenwich West,,,0,0,-1,-1,-1
+Greenwich,E05000223,Kidbrooke with Hornfair,,,-7,-7,-7,-7,-5
+Greenwich,E05000224,Middle Park and Sutcliffe,,,-8,-7,-6,-8,-7
+Greenwich,E05000225,Peninsula,,,-2,-2,-3,-1,1
+Greenwich,E05000226,Plumstead,,,-6,-8,-7,-6,-7
+Greenwich,E05000227,Shooters Hill,,,-1,0,0,2,0
+Greenwich,E05000228,Thamesmead Moorings,,,-8,-7,-8,-7,-5
+Greenwich,E05000229,Woolwich Common,,,-10,-9,-8,-7,-5
+Greenwich,E05000230,Woolwich Riverside,,,-10,-10,-11,-7,-7
+Hackney,E05000231,Brownswood,,,-3,-3,-5,-5,-5
+Hackney,E05000232,Cazenove,,,0,-1,-2,-1,0
+Hackney,E05000233,Chatham,,,-9,-8,-9,-10,-6
+Hackney,E05000234,Clissold,,,-2,-1,-2,-1,0
+Hackney,E05000235,Dalston,,,-8,-6,-7,-8,-9
+Hackney,E05000236,De Beauvoir,,,-6,-4,-6,-6,-9
+Hackney,E05000237,Hackney Central,,,-8,-6,-6,-5,-6
+Hackney,E05000238,Hackney Downs,,,-6,-6,-6,-7,-6
+Hackney,E05000239,Haggerston,,,-7,-6,-8,-8,-6
+Hackney,E05000240,Hoxton,,,-6,-5,-7,-4,-6
+Hackney,E05000241,King's Park,,,-6,-5,-6,-7,-6
+Hackney,E05000242,Leabridge,,,-5,-7,-8,-7,-7
+Hackney,E05000243,Lordship,,,-2,-1,-3,-4,-3
+Hackney,E05000244,New River,,,-3,-2,-4,-3,-2
+Hackney,E05000245,Queensbridge,,,-10,-9,-9,-9,-7
+Hackney,E05000246,Springfield,,,-3,-3,-4,-5,-9
+Hackney,E05000247,Stoke Newington Central,,,-5,-3,-4,-3,-2
+Hackney,E05000248,Victoria,,,-5,-4,-6,-7,-9
+Hackney,E05000249,Wick,,,-9,-9,-9,-9,-11
+Hammersmith and Fulham,E05000250,Addison,,,0,0,-1,-1,0
+Hammersmith and Fulham,E05000251,Askew,,,-3,-2,-2,-4,-4
+Hammersmith and Fulham,E05000252,Avonmore and Brook Green,,,3,4,3,2,4
+Hammersmith and Fulham,E05000253,College Park and Old Oak,,,-4,-4,-6,-6,-3
+Hammersmith and Fulham,E05000254,Fulham Broadway,,,-5,-4,-4,-2,0
+Hammersmith and Fulham,E05000255,Fulham Reach,,,-1,0,0,0,1
+Hammersmith and Fulham,E05000256,Hammersmith Broadway,,,-3,-4,-4,-3,-3
+Hammersmith and Fulham,E05000257,Munster,,,1,1,1,2,3
+Hammersmith and Fulham,E05000258,North End,,,-1,-2,-3,-3,0
+Hammersmith and Fulham,E05000259,Palace Riverside,,,11,13,10,10,10
+Hammersmith and Fulham,E05000260,Parsons Green and Walham,,,4,2,2,3,3
+Hammersmith and Fulham,E05000261,Ravenscourt Park,,,-1,-1,-2,0,1
+Hammersmith and Fulham,E05000262,Sands End,,,0,1,0,1,1
+Hammersmith and Fulham,E05000263,Shepherd's Bush Green,,,-1,-3,-3,-3,-2
+Hammersmith and Fulham,E05000264,Town,,,1,1,1,3,0
+Hammersmith and Fulham,E05000265,Wormholt and White City,,,-4,-4,-6,-7,-6
+Haringey,E05000266,Alexandra,,,5,5,4,6,8
+Haringey,E05000267,Bounds Green,,,-4,-4,-4,-5,-3
+Haringey,E05000268,Bruce Grove,,,-9,-8,-10,-11,-10
+Haringey,E05000269,Crouch End,,,3,3,5,7,7
+Haringey,E05000270,Fortis Green,,,4,5,3,5,6
+Haringey,E05000271,Harringay,,,-4,-3,-3,-2,-4
+Haringey,E05000272,Highgate,,,3,5,3,5,4
+Haringey,E05000273,Hornsey,,,-5,-6,-5,-3,-3
+Haringey,E05000274,Muswell Hill,,,3,3,6,8,8
+Haringey,E05000275,Noel Park,,,-12,-12,-12,-12,-11
+Haringey,E05000276,Northumberland Park,,,-11,-11,-12,-12,-13
+Haringey,E05000277,St Ann's,,,-5,-6,-5,-5,-5
+Haringey,E05000278,Seven Sisters,,,-4,-3,-3,-3,-4
+Haringey,E05000279,Stroud Green,,,1,0,0,0,0
+Haringey,E05000280,Tottenham Green,,,-8,-8,-11,-9,-10
+Haringey,E05000281,Tottenham Hale,,,-6,-8,-10,-7,-8
+Haringey,E05000282,West Green,,,-6,-5,-8,-7,-6
+Haringey,E05000283,White Hart Lane,,,-11,-12,-12,-11,-12
+Haringey,E05000284,Woodside,,,-4,-3,-3,-2,-4
+Harrow,E05000285,Belmont,,,4,3,5,3,5
+Harrow,E05000286,Canons,,,6,6,6,6,5
+Harrow,E05000287,Edgware,,,0,0,1,1,2
+Harrow,E05000288,Greenhill,,,0,0,1,0,-3
+Harrow,E05000289,Harrow on the Hill,,,4,4,4,4,2
+Harrow,E05000290,Harrow Weald,,,0,2,0,0,-1
+Harrow,E05000291,Hatch End,,,5,6,5,5,2
+Harrow,E05000292,Headstone North,,,7,6,7,8,6
+Harrow,E05000293,Headstone South,,,6,6,6,5,3
+Harrow,E05000294,Kenton East,,,2,3,3,2,2
+Harrow,E05000295,Kenton West,,,6,6,5,4,3
+Harrow,E05000296,Marlborough,,,-1,1,1,0,-1
+Harrow,E05000297,Pinner,,,2,1,2,2,1
+Harrow,E05000298,Pinner South,,,9,9,8,10,9
+Harrow,E05000299,Queensbury,,,3,3,2,3,3
+Harrow,E05000300,Rayners Lane,,,6,6,7,6,5
+Harrow,E05000301,Roxbourne,,,-2,-1,0,-1,-2
+Harrow,E05000302,Roxeth,,,2,2,2,1,1
+Harrow,E05000303,Stanmore Park,,,2,1,0,2,1
+Harrow,E05000304,Wealdstone,,,-4,-4,-5,-5,-4
+Harrow,E05000305,West Harrow,,,4,4,3,4,3
+Havering,E05000306,Brooklands,,,-2,-1,-2,-3,-2
+Havering,E05000307,Cranham,,,9,9,9,9,8
+Havering,E05000308,Elm Park,,,2,1,1,0,1
+Havering,E05000309,Emerson Park,,,8,8,7,7,5
+Havering,E05000310,Gooshays,,,-9,-8,-10,-11,-11
+Havering,E05000311,Hacton,,,6,6,7,6,5
+Havering,E05000312,Harold Wood,,,2,2,1,2,1
+Havering,E05000313,Havering Park,,,0,0,-1,-1,-4
+Havering,E05000314,Heaton,,,-8,-8,-9,-10,-11
+Havering,E05000315,Hylands,,,4,5,4,3,4
+Havering,E05000316,Mawneys,,,2,2,1,1,1
+Havering,E05000317,Pettits,,,6,5,4,5,5
+Havering,E05000318,Rainham and Wennington,,,-1,-3,-2,-3,-3
+Havering,E05000319,Romford Town,,,-3,-2,-2,-2,-1
+Havering,E05000320,St Andrew's,,,3,3,3,2,3
+Havering,E05000321,South Hornchurch,,,-1,-3,-3,-3,-3
+Havering,E05000322,Squirrel's Heath,,,4,4,3,3,2
+Havering,E05000323,Upminster,,,8,8,7,7,7
+Hillingdon,E05000324,Barnhill,,,-6,-6,-6,-5,-5
+Hillingdon,E05000325,Botwell,,,-7,-5,-7,-5,-8
+Hillingdon,E05000326,Brunel,,,-1,-1,-2,0,-2
+Hillingdon,E05000327,Cavendish,,,4,5,6,5,6
+Hillingdon,E05000328,Charville,,,-1,0,1,2,0
+Hillingdon,E05000329,Eastcote and East Ruislip,,,10,9,9,10,9
+Hillingdon,E05000330,Harefield,,,0,-1,-1,-3,-4
+Hillingdon,E05000331,Heathrow Villages,,,-2,-2,-2,-2,-3
+Hillingdon,E05000332,Hillingdon East,,,1,1,2,2,1
+Hillingdon,E05000333,Ickenham,,,9,8,10,9,9
+Hillingdon,E05000334,Manor,,,6,7,7,6,7
+Hillingdon,E05000335,Northwood,,,7,8,9,7,7
+Hillingdon,E05000336,Northwood Hills,,,4,3,4,4,5
+Hillingdon,E05000337,Pinkwell,,,-4,-5,-4,-2,-2
+Hillingdon,E05000338,South Ruislip,,,5,5,4,4,4
+Hillingdon,E05000339,Townfield,,,-6,-6,-5,-6,-8
+Hillingdon,E05000340,Uxbridge North,,,2,2,3,2,2
+Hillingdon,E05000341,Uxbridge South,,,-2,-2,0,-1,-1
+Hillingdon,E05000342,West Drayton,,,-6,-6,-7,-7,-10
+Hillingdon,E05000343,West Ruislip,,,5,5,4,3,6
+Hillingdon,E05000344,Yeading,,,-5,-5,-5,-3,-5
+Hillingdon,E05000345,Yiewsley,,,-5,-4,-6,-5,-7
+Hounslow,E05000346,Bedfont,,,-7,-7,-5,-3,-6
+Hounslow,E05000347,Brentford,,,1,1,0,1,0
+Hounslow,E05000348,Chiswick Homefields,,,7,7,7,7,7
+Hounslow,E05000349,Chiswick Riverside,,,3,4,4,2,6
+Hounslow,E05000350,Cranford,,,-5,-5,-5,-5,-4
+Hounslow,E05000351,Feltham North,,,-3,-3,-4,-2,-3
+Hounslow,E05000352,Feltham West,,,-6,-8,-6,-5,-5
+Hounslow,E05000353,Hanworth,,,-7,-4,-3,-4,-6
+Hounslow,E05000354,Hanworth Park,,,-7,-4,-2,-3,-3
+Hounslow,E05000355,Heston Central,,,-2,-2,-1,-2,-3
+Hounslow,E05000356,Heston East,,,2,2,0,0,1
+Hounslow,E05000357,Heston West,,,-5,-6,-6,-5,-4
+Hounslow,E05000358,Hounslow Central,,,1,1,-1,1,1
+Hounslow,E05000359,Hounslow Heath,,,-2,-2,-2,0,-1
+Hounslow,E05000360,Hounslow South,,,4,4,3,4,4
+Hounslow,E05000361,Hounslow West,,,-4,-4,-4,-5,-3
+Hounslow,E05000362,Isleworth,,,-3,-5,-3,0,-2
+Hounslow,E05000363,Osterley and Spring Grove,,,7,7,6,5,6
+Hounslow,E05000364,Syon,,,0,-1,1,1,0
+Hounslow,E05000365,Turnham Green,,,5,5,5,4,7
+Islington,E05000366,Barnsbury,,,-4,-5,-6,-6,-5
+Islington,E05000367,Bunhill,,,-6,-5,-6,-5,-4
+Islington,E05000368,Caledonian,,,-6,-6,-4,-5,-7
+Islington,E05000369,Canonbury,,,-6,-6,-8,-5,-5
+Islington,E05000370,Clerkenwell,,,-2,-4,-3,-4,-2
+Islington,E05000371,Finsbury Park,,,-9,-9,-10,-10,-7
+Islington,E05000372,Highbury East,,,1,2,0,1,2
+Islington,E05000373,Highbury West,,,1,0,0,1,2
+Islington,E05000374,Hillrise,,,-4,-5,-5,-4,-5
+Islington,E05000375,Holloway,,,-4,-3,-4,-5,-5
+Islington,E05000376,Junction,,,-4,-4,-4,-3,-3
+Islington,E05000377,Mildmay,,,-8,-6,-6,-7,-4
+Islington,E05000378,St George's,,,-5,-6,-5,-5,-4
+Islington,E05000379,St Mary's,,,-3,-4,-4,-4,-3
+Islington,E05000380,St Peter's,,,-8,-7,-7,-9,-7
+Islington,E05000381,Tollington,,,-6,-5,-6,-5,-5
+Kensington and Chelsea,E05000382,Abingdon,,,9,9,8,8,9
+Kensington and Chelsea,E05000383,Brompton,,,9,11,10,7,11
+Kensington and Chelsea,E05000384,Campden,,,13,11,12,12,14
+Kensington and Chelsea,E05000385,Colville,,,-1,0,-3,-3,-2
+Kensington and Chelsea,E05000386,Courtfield,,,8,13,8,11,11
+Kensington and Chelsea,E05000387,Cremorne,,,2,2,1,1,2
+Kensington and Chelsea,E05000388,Earl's Court,,,6,4,3,4,4
+Kensington and Chelsea,E05000389,Golborne,,,-4,-5,-7,-6,-5
+Kensington and Chelsea,E05000390,Hans Town,,,8,8,6,9,8
+Kensington and Chelsea,E05000391,Holland,,,9,9,9,11,11
+Kensington and Chelsea,E05000392,Norland,,,5,5,4,4,3
+Kensington and Chelsea,E05000393,Notting Barns,,,-1,-1,-1,-3,-2
+Kensington and Chelsea,E05000394,Pembridge,,,3,8,8,8,10
+Kensington and Chelsea,E05000395,Queen's Gate,,,13,12,6,12,11
+Kensington and Chelsea,E05000396,Redcliffe,,,7,10,10,10,8
+Kensington and Chelsea,E05000397,Royal Hospital,,,7,6,5,5,6
+Kensington and Chelsea,E05000398,St Charles,,,-4,-3,-6,-5,-6
+Kensington and Chelsea,E05000399,Stanley,,,5,8,6,8,7
+Kingston upon Thames,E05000400,Alexandra,,,6,6,6,6,7
+Kingston upon Thames,E05000401,Berrylands,,,6,5,6,8,6
+Kingston upon Thames,E05000402,Beverley,,,4,5,4,5,4
+Kingston upon Thames,E05000403,Canbury,,,8,7,8,10,8
+Kingston upon Thames,E05000404,Chessington North and Hook,,,2,3,3,2,2
+Kingston upon Thames,E05000405,Chessington South,,,6,8,6,5,4
+Kingston upon Thames,E05000406,Coombe Hill,,,7,8,8,9,6
+Kingston upon Thames,E05000407,Coombe Vale,,,9,9,9,9,8
+Kingston upon Thames,E05000408,Grove,,,4,4,3,3,2
+Kingston upon Thames,E05000409,Norbiton,,,-2,-2,-1,-1,-3
+Kingston upon Thames,E05000410,Old Malden,,,7,6,6,6,6
+Kingston upon Thames,E05000411,St James,,,5,6,5,6,5
+Kingston upon Thames,E05000412,St Mark's,,,9,8,8,7,8
+Kingston upon Thames,E05000413,Surbiton Hill,,,5,3,4,5,6
+Kingston upon Thames,E05000414,Tolworth and Hook Rise,,,3,2,4,2,3
+Kingston upon Thames,E05000415,Tudor,,,10,10,10,10,10
+Lambeth,E05000416,Bishop's,,,-1,-2,-1,-2,2
+Lambeth,E05000417,Brixton Hill,,,-3,-3,-4,-4,-3
+Lambeth,E05000418,Clapham Common,,,0,1,0,-1,-2
+Lambeth,E05000419,Clapham Town,,,-3,-5,-6,-6,-5
+Lambeth,E05000420,Coldharbour,,,-10,-10,-10,-10,-10
+Lambeth,E05000421,Ferndale,,,-6,-5,-7,-7,-7
+Lambeth,E05000422,Gipsy Hill,,,-5,-4,-6,-6,-5
+Lambeth,E05000423,Herne Hill,,,-2,-2,-3,-2,-1
+Lambeth,E05000424,Knight's Hill,,,-5,-6,-5,-5,-3
+Lambeth,E05000425,Larkhall,,,-4,-5,-5,-5,-5
+Lambeth,E05000426,Oval,,,-1,-2,-2,-2,-1
+Lambeth,E05000427,Prince's,,,-5,-4,-4,-4,-3
+Lambeth,E05000428,St Leonard's,,,-1,-3,-1,-1,0
+Lambeth,E05000429,Stockwell,,,-2,-3,-4,-3,-2
+Lambeth,E05000430,Streatham Hill,,,-1,-1,-1,-1,-1
+Lambeth,E05000431,Streatham South,,,-1,-2,-2,-2,0
+Lambeth,E05000432,Streatham Wells,,,-2,-2,-3,-3,-1
+Lambeth,E05000433,Thornton,,,-1,-1,-2,-1,1
+Lambeth,E05000434,Thurlow Park,,,-1,-2,-3,-2,-1
+Lambeth,E05000435,Tulse Hill,,,-6,-6,-7,-6,-6
+Lambeth,E05000436,Vassall,,,-10,-10,-10,-9,-7
+Lewisham,E05000437,Bellingham,,,-8,-9,-9,-7,-7
+Lewisham,E05000438,Blackheath,,,1,2,1,0,0
+Lewisham,E05000439,Brockley,,,-6,-5,-6,-6,-5
+Lewisham,E05000440,Catford South,,,-2,-3,-2,-2,-2
+Lewisham,E05000441,Crofton Park,,,0,-2,-2,-1,-2
+Lewisham,E05000442,Downham,,,-10,-10,-9,-10,-6
+Lewisham,E05000443,Evelyn,,,-8,-8,-8,-8,-8
+Lewisham,E05000444,Forest Hill,,,-1,-4,-3,-3,-2
+Lewisham,E05000445,Grove Park,,,-4,-6,-6,-4,-5
+Lewisham,E05000446,Ladywell,,,1,0,-1,-1,-1
+Lewisham,E05000447,Lee Green,,,-1,-1,0,0,0
+Lewisham,E05000448,Lewisham Central,,,-6,-5,-4,-5,-6
+Lewisham,E05000449,New Cross,,,-9,-9,-11,-10,-9
+Lewisham,E05000450,Perry Vale,,,-3,-6,-6,-4,-4
+Lewisham,E05000451,Rushey Green,,,-6,-7,-9,-6,-4
+Lewisham,E05000452,Sydenham,,,-4,-5,-5,-5,-6
+Lewisham,E05000453,Telegraph Hill,,,-4,-5,-6,-5,-2
+Lewisham,E05000454,Whitefoot,,,-5,-7,-8,-7,-5
+Merton,E05000455,Abbey,,,5,6,3,4,5
+Merton,E05000456,Cannon Hill,,,8,8,9,6,6
+Merton,E05000457,Colliers Wood,,,2,1,1,2,2
+Merton,E05000458,Cricket Green,,,-4,-5,-4,-3,-3
+Merton,E05000459,Dundonald,,,12,12,12,13,11
+Merton,E05000460,Figge's Marsh,,,-3,-1,-2,-3,-5
+Merton,E05000461,Graveney,,,2,3,3,2,2
+Merton,E05000462,Hillside,,,12,8,10,9,10
+Merton,E05000463,Lavender Fields,,,-2,-3,-2,-4,-1
+Merton,E05000464,Longthornton,,,0,0,0,1,1
+Merton,E05000465,Lower Morden,,,6,6,6,5,4
+Merton,E05000466,Merton Park,,,12,11,10,12,10
+Merton,E05000467,Pollards Hill,,,-1,-1,-1,-3,-3
+Merton,E05000468,Ravensbury,,,-3,-3,-2,-3,-2
+Merton,E05000469,Raynes Park,,,8,9,8,7,8
+Merton,E05000470,St Helier,,,0,0,-1,0,0
+Merton,E05000471,Trinity,,,7,5,3,5,4
+Merton,E05000472,Village,,,9,11,11,7,10
+Merton,E05000473,West Barnes,,,8,8,7,6,6
+Merton,E05000474,Wimbledon Park,,,9,10,9,9,10
+Newham,E05000475,Beckton,,,-9,-8,-9,-7,-5
+Newham,E05000476,Boleyn,,,-4,-4,-5,-6,-5
+Newham,E05000477,Canning Town North,,,-13,-13,-12,-11,-10
+Newham,E05000478,Canning Town South,,,-9,-10,-10,-9,-7
+Newham,E05000479,Custom House,,,-13,-10,-12,-10,-9
+Newham,E05000480,East Ham Central,,,-3,-3,-5,-5,-4
+Newham,E05000481,East Ham North,,,-3,-2,-3,-1,-3
+Newham,E05000482,East Ham South,,,-7,-7,-8,-7,-6
+Newham,E05000483,Forest Gate North,,,-7,-7,-6,-6,-4
+Newham,E05000484,Forest Gate South,,,-5,-6,-6,-7,-9
+Newham,E05000485,Green Street East,,,-2,-2,-2,-2,-2
+Newham,E05000486,Green Street West,,,-4,-4,-5,-5,-2
+Newham,E05000487,Little Ilford,,,-5,-5,-4,-4,-4
+Newham,E05000488,Manor Park,,,-4,-4,-4,-4,-4
+Newham,E05000489,Plaistow North,,,-6,-7,-7,-7,-4
+Newham,E05000490,Plaistow South,,,-4,-4,-4,-5,-3
+Newham,E05000491,Royal Docks,,,-5,-5,-6,-4,-2
+Newham,E05000492,Stratford and New Town,,,-6,-5,-5,-6,-6
+Newham,E05000493,Wall End,,,-1,-2,-2,-3,-3
+Newham,E05000494,West Ham,,,-5,-5,-4,-3,-5
+Redbridge,E05000495,Aldborough,,,0,1,0,2,2
+Redbridge,E05000496,Barkingside,,,5,4,4,5,5
+Redbridge,E05000497,Bridge,,,1,0,0,1,4
+Redbridge,E05000498,Chadwell,,,-1,-1,-1,-1,-3
+Redbridge,E05000499,Church End,,,6,5,5,5,4
+Redbridge,E05000500,Clayhall,,,7,6,6,7,6
+Redbridge,E05000501,Clementswood,,,-6,-6,-5,-6,-6
+Redbridge,E05000502,Cranbrook,,,3,4,2,2,3
+Redbridge,E05000503,Fairlop,,,1,0,0,0,1
+Redbridge,E05000504,Fullwell,,,-2,-4,-4,-2,1
+Redbridge,E05000505,Goodmayes,,,-4,-3,-4,-4,-4
+Redbridge,E05000506,Hainault,,,-3,-4,-7,-5,-5
+Redbridge,E05000507,Loxford,,,-5,-5,-6,-6,-6
+Redbridge,E05000508,Mayfield,,,0,-1,-2,-1,-1
+Redbridge,E05000509,Monkhams,,,9,8,8,8,9
+Redbridge,E05000510,Newbury,,,0,1,1,2,3
+Redbridge,E05000511,Roding,,,3,2,2,2,2
+Redbridge,E05000512,Seven Kings,,,-1,-1,-1,-1,-2
+Redbridge,E05000513,Snaresbrook,,,4,6,4,4,5
+Redbridge,E05000514,Valentines,,,-3,-2,-2,-1,-3
+Redbridge,E05000515,Wanstead,,,4,5,4,5,4
+Richmond upon Thames,E05000516,Barnes,,,9,7,7,6,6
+Richmond upon Thames,E05000517,East Sheen,,,13,13,12,13,11
+Richmond upon Thames,E05000518,Fulwell and Hampton Hill,,,9,9,10,9,8
+Richmond upon Thames,E05000519,"Ham, Petersham and Richmond Riverside",,,4,3,2,4,5
+Richmond upon Thames,E05000520,Hampton,,,9,10,9,7,8
+Richmond upon Thames,E05000521,Hampton North,,,1,2,1,2,0
+Richmond upon Thames,E05000522,Hampton Wick,,,10,9,8,10,9
+Richmond upon Thames,E05000523,Heathfield,,,4,2,1,0,1
+Richmond upon Thames,E05000524,Kew,,,12,13,10,10,9
+Richmond upon Thames,E05000525,Mortlake and Barnes Common,,,8,9,8,8,7
+Richmond upon Thames,E05000526,North Richmond,,,10,10,8,8,8
+Richmond upon Thames,E05000527,St Margarets and North Twickenham,,,10,10,9,8,10
+Richmond upon Thames,E05000528,South Richmond,,,10,8,9,9,7
+Richmond upon Thames,E05000529,South Twickenham,,,12,12,12,12,12
+Richmond upon Thames,E05000530,Teddington,,,12,13,12,12,11
+Richmond upon Thames,E05000531,Twickenham Riverside,,,10,10,10,12,10
+Richmond upon Thames,E05000532,West Twickenham,,,7,7,7,6,8
+Richmond upon Thames,E05000533,Whitton,,,6,6,5,4,5
+Southwark,E05000534,Brunswick Park,,,-6,-6,-6,-6,-7
+Southwark,E05000535,Camberwell Green,,,-7,-8,-7,-8,-7
+Southwark,E05000536,Cathedrals,,,-3,-4,-4,-3,-3
+Southwark,E05000537,Chaucer,,,-2,1,-2,-1,-3
+Southwark,E05000538,College,,,-1,-1,-2,-2,-2
+Southwark,E05000539,East Dulwich,,,1,3,1,2,1
+Southwark,E05000540,East Walworth,,,-8,-9,-11,-11,-9
+Southwark,E05000541,Faraday,,,-7,-7,-9,-5,-8
+Southwark,E05000542,Grange,,,-6,-7,-5,-6,-6
+Southwark,E05000543,Livesey,,,-11,-13,-11,-10,-9
+Southwark,E05000544,Newington,,,-5,-5,-6,-5,-5
+Southwark,E05000545,Nunhead,,,-8,-10,-8,-7,-9
+Southwark,E05000546,Peckham,,,-10,-10,-9,-9,-9
+Southwark,E05000547,Peckham Rye,,,0,1,0,-1,0
+Southwark,E05000548,Riverside,,,-2,-2,-4,-3,-2
+Southwark,E05000549,Rotherhithe,,,-5,-4,-5,-4,-4
+Southwark,E05000550,South Bermondsey,,,-7,-7,-7,-7,-6
+Southwark,E05000551,South Camberwell,,,-4,-2,-3,-2,-1
+Southwark,E05000552,Surrey Docks,,,-2,-1,-5,-3,-2
+Southwark,E05000553,The Lane,,,-8,-6,-6,-6,-5
+Southwark,E05000554,Village,,,8,7,8,8,9
+Sutton,E05000555,Beddington North,,,5,6,5,6,4
+Sutton,E05000556,Beddington South,,,-3,-2,-4,-4,-3
+Sutton,E05000557,Belmont,,,6,6,7,6,3
+Sutton,E05000558,Carshalton Central,,,7,6,6,6,6
+Sutton,E05000559,Carshalton South and Clockhouse,,,8,8,7,8,7
+Sutton,E05000560,Cheam,,,10,9,8,7,8
+Sutton,E05000561,Nonsuch,,,10,10,9,9,9
+Sutton,E05000562,St Helier,,,-3,-4,-4,-3,-3
+Sutton,E05000563,Stonecot,,,6,7,7,7,6
+Sutton,E05000564,Sutton Central,,,-2,-4,-2,-2,-2
+Sutton,E05000565,Sutton North,,,4,3,3,4,4
+Sutton,E05000566,Sutton South,,,2,2,3,3,1
+Sutton,E05000567,Sutton West,,,8,8,7,8,7
+Sutton,E05000568,The Wrythe,,,0,0,0,-2,1
+Sutton,E05000569,Wallington North,,,5,4,5,6,3
+Sutton,E05000570,Wallington South,,,3,3,3,3,2
+Sutton,E05000571,Wandle Valley,,,-2,-3,-2,-3,-5
+Sutton,E05000572,Worcester Park,,,8,7,7,7,7
+Tower Hamlets,E05000573,Bethnal Green North,,,-6,-7,-6,-6,-7
+Tower Hamlets,E05000574,Bethnal Green South,,,-7,-7,-8,-6,-6
+Tower Hamlets,E05000575,Blackwall and Cubitt Town,,,-2,-2,-4,-1,1
+Tower Hamlets,E05000576,Bow East,,,-10,-11,-11,-8,-9
+Tower Hamlets,E05000577,Bow West,,,-5,-5,-6,-6,-6
+Tower Hamlets,E05000578,Bromley-by-Bow,,,-8,-9,-10,-9,-7
+Tower Hamlets,E05000579,East India and Lansbury,,,-13,-17,-13,-15,-11
+Tower Hamlets,E05000580,Limehouse,,,-5,-6,-7,-8,-6
+Tower Hamlets,E05000581,Mile End and Globe Town,,,-4,-4,-3,-2,-3
+Tower Hamlets,E05000582,Mile End East,,,-11,-10,-9,-12,-9
+Tower Hamlets,E05000583,Millwall,,,1,2,1,0,4
+Tower Hamlets,E05000584,St Dunstan's and Stepney Green,,,-9,-8,-8,-6,-5
+Tower Hamlets,E05000585,St Katharine's and Wapping,,,1,0,0,-1,4
+Tower Hamlets,E05000586,Shadwell,,,-5,-5,-5,-6,-4
+Tower Hamlets,E05000587,Spitalfields and Banglatown,,,-10,-10,-7,-6,-3
+Tower Hamlets,E05000588,Weavers,,,-7,-6,-8,-7,-5
+Tower Hamlets,E05000589,Whitechapel,,,-5,-4,-4,-6,-4
+Waltham Forest,E05000590,Cann Hall,,,-7,-7,-8,-5,-5
+Waltham Forest,E05000591,Cathall,,,-7,-7,-6,-5,-5
+Waltham Forest,E05000592,Chapel End,,,0,0,-1,0,0
+Waltham Forest,E05000593,Chingford Green,,,3,3,2,3,2
+Waltham Forest,E05000594,Endlebury,,,1,1,1,1,2
+Waltham Forest,E05000595,Forest,,,-1,-1,-2,-2,0
+Waltham Forest,E05000596,Grove Green,,,-3,-2,0,-1,0
+Waltham Forest,E05000597,Hale End and Highams Park,,,3,2,3,2,2
+Waltham Forest,E05000598,Hatch Lane,,,-2,-3,-3,-3,-2
+Waltham Forest,E05000599,High Street,,,-4,-3,-4,-4,-2
+Waltham Forest,E05000600,Higham Hill,,,-3,-3,-4,-5,-4
+Waltham Forest,E05000601,Hoe Street,,,-4,-6,-5,-5,-6
+Waltham Forest,E05000602,Larkswood,,,-1,-1,-1,-2,-2
+Waltham Forest,E05000603,Lea Bridge,,,-3,-5,-6,-4,-4
+Waltham Forest,E05000604,Leyton,,,-7,-7,-7,-8,-5
+Waltham Forest,E05000605,Leytonstone,,,-3,-2,-3,-1,0
+Waltham Forest,E05000606,Markhouse,,,-2,-3,-4,-3,-3
+Waltham Forest,E05000607,Valley,,,-4,-4,-4,-5,-5
+Waltham Forest,E05000608,William Morris,,,-4,-4,-3,-5,-2
+Waltham Forest,E05000609,Wood Street,,,-2,-3,-3,-3,-3
+Wandsworth,E05000610,Balham,,,6,6,5,5,5
+Wandsworth,E05000611,Bedford,,,3,3,2,1,2
+Wandsworth,E05000612,Earlsfield,,,2,2,2,2,2
+Wandsworth,E05000613,East Putney,,,4,5,5,6,6
+Wandsworth,E05000614,Fairfield,,,4,4,3,1,3
+Wandsworth,E05000615,Furzedown,,,0,1,1,0,1
+Wandsworth,E05000616,Graveney,,,-2,-2,-3,-2,-1
+Wandsworth,E05000617,Latchmere,,,-6,-6,-7,-6,-5
+Wandsworth,E05000618,Nightingale,,,5,3,3,3,2
+Wandsworth,E05000619,Northcote,,,6,5,5,6,6
+Wandsworth,E05000620,Queenstown,,,-3,-2,-5,-2,-2
+Wandsworth,E05000621,Roehampton,,,-5,-5,-5,-6,-2
+Wandsworth,E05000622,St Mary's Park,,,0,1,0,-2,-1
+Wandsworth,E05000623,Shaftesbury,,,-1,2,-1,0,-1
+Wandsworth,E05000624,Southfields,,,6,4,5,6,6
+Wandsworth,E05000625,Thamesfield,,,12,10,12,10,11
+Wandsworth,E05000626,Tooting,,,0,1,0,0,2
+Wandsworth,E05000627,Wandsworth Common,,,5,5,4,5,3
+Wandsworth,E05000628,West Hill,,,0,1,1,1,3
+Wandsworth,E05000629,West Putney,,,0,-2,-1,-1,0
+Westminster,E05000630,Abbey Road,,,8,7,8,8,8
+Westminster,E05000631,Bayswater,,,5,5,4,0,4
+Westminster,E05000632,Bryanston and Dorset Square,,,7,7,4,4,4
+Westminster,E05000633,Churchill,,,-1,0,-1,-4,-4
+Westminster,E05000634,Church Street,,,-7,-7,-8,-7,-6
+Westminster,E05000635,Harrow Road,,,-5,-6,-7,-6,-4
+Westminster,E05000636,Hyde Park,,,8,5,4,5,5
+Westminster,E05000637,Knightsbridge and Belgravia,,,14,15,14,13,17
+Westminster,E05000638,Lancaster Gate,,,3,2,3,1,5
+Westminster,E05000639,Little Venice,,,1,3,1,1,2
+Westminster,E05000640,Maida Vale,,,2,-2,-1,-1,3
+Westminster,E05000641,Marylebone High Street,,,9,9,9,10,8
+Westminster,E05000642,Queen's Park,,,-11,-10,-10,-10,-5
+Westminster,E05000643,Regent's Park,,,8,7,5,5,8
+Westminster,E05000644,St James's,,,4,4,5,2,6
+Westminster,E05000645,Tachbrook,,,7,8,4,4,5
+Westminster,E05000646,Vincent Square,,,5,6,3,4,6
+Westminster,E05000647,Warwick,,,5,8,6,5,6
+Westminster,E05000648,Westbourne,,,-6,-6,-7,-6,-5
+Westminster,E05000649,West End,,,5,6,2,6,5
+London,E12000007,LONDON,,,-1,-1,-1,-1,-1
+,,,,,,,,,
+Barking and Dagenham,E09000002,BARKING AND DAGENHAM,,,-6,-6,-7,-7,-7
+Barnet,E09000003,BARNET,,,2,2,1,2,2
+Bexley,E09000004,BEXLEY,,,2,2,2,2,2
+Brent,E09000005,BRENT,,,-2,-2,-3,-3,-3
+Bromley,E09000006,BROMLEY,,,4,4,3,4,4
+Camden,E09000007,CAMDEN,,,-1,0,-1,0,1
+Croydon,E09000008,CROYDON,,,-2,-2,-2,-2,-2
+Ealing,E09000009,EALING,,,1,1,0,0,1
+Enfield,E09000010,ENFIELD,,,-2,-3,-3,-4,-5
+Greenwich,E09000011,GREENWICH,,,-5,-5,-5,-4,-3
+Hackney,E09000012,HACKNEY,,,-5,-5,-6,-6,-5
+Hammersmith and Fulham,E09000013,HAMMERSMITH AND FULHAM,,,-1,-1,-2,-2,-1
+Haringey,E09000014,HARINGEY,,,-5,-5,-5,-4,-4
+Harrow,E09000015,HARROW,,,3,3,3,3,2
+Havering,E09000016,HAVERING,,,2,2,1,1,0
+Hillingdon,E09000017,HILLINGDON,,,0,0,0,0,-1
+Hounslow,E09000018,HOUNSLOW,,,-2,-2,-1,-1,-1
+Islington,E09000019,ISLINGTON,,,-5,-5,-5,-5,-4
+Kensington and Chelsea,E09000020,KENSINGTON AND CHELSEA,,,5,5,4,4,5
+Kingston upon Thames,E09000021,KINGSTON UPON THAMES,,,5,5,5,5,5
+Lambeth,E09000022,LAMBETH,,,-4,-4,-4,-4,-3
+Lewisham,E09000023,LEWISHAM,,,-5,-6,-6,-5,-4
+Merton,E09000024,MERTON,,,3,3,3,3,3
+Newham,E09000025,NEWHAM,,,-6,-6,-6,-6,-6
+Redbridge,E09000026,REDBRIDGE,,,1,0,0,0,1
+Richmond upon Thames,E09000027,RICHMOND UPON THAMES,,,8,8,8,8,7
+Southwark,E09000028,SOUTHWARK,,,-4,-4,-4,-4,-4
+Sutton,E09000029,SUTTON,,,4,4,4,3,3
+Tower Hamlets,E09000030,TOWER HAMLETS,,,-5,-6,-5,-5,-4
+Waltham Forest,E09000031,WALTHAM FOREST,,,-3,-3,-3,-3,-2
+Wandsworth,E09000032,WANDSWORTH,,,1,1,1,1,2
+Westminster,E09000033,WESTMINSTER,,,3,3,2,2,3
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,

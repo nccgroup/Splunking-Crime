@@ -1,0 +1,351 @@
+<dashboard>
+  <label>Crime Prediction For Next Year using Decision Tree Regressor Algorithm</label>
+  <row>
+    <panel>
+      <title>R Square</title>
+      <single>
+        <search>
+          <query>| inputlookup LSOA_Size.csv 
+| rename lsoa as Codes 
+| append 
+    [| inputlookup Total_Notifiable_Offences.csv ] 
+| append 
+    [| inputlookup aged_44.csv ] 
+| append 
+    [| inputlookup ages_15.csv ] 
+| append 
+    [| inputlookup ages_29.csv ] 
+| append 
+    [| inputlookup ages_64.csv ] 
+| append 
+    [| inputlookup ages_65plus.csv ] 
+| append 
+    [| inputlookup all_ages.csv ] 
+| append 
+    [| inputlookup child_poverty_percent.csv ] 
+| append 
+    [| inputlookup happiness_coefficient.csv ] 
+| append 
+    [| inputlookup household_income.csv 
+    | rename Code as Codes ] 
+| append 
+    [| inputlookup school_absence.csv] 
+| stats values(*) as * by Codes 
+| where isnotnull(size) 
+| eval Name=coalesce(Name,Names) 
+| fields - Names Codes 
+| rename *_now as *_2012_year_minus_1, *_minus_1 as *_2012_minus_2, *_minus_2 as *_2012_minus_3, *_2012 as *_2012_now 
+| fields *_2012_* Name size 
+| rename *_2012_year_minus_1 as *_year_minus_1 *_2012_minus_2 as *_minus_2, *_2012_minus_3 as *_minus_3, *_2012_now as *_now 
+| apply predict_total_crime_per_lsoa_decisiontreeregressor_FieldSelector_0 
+| apply "predict_total_crime_per_lsoa_decisiontreeregressor" 
+| `regressionstatistics("total_notifiable_offences_now", "predicted(total_notifiable_offences_now)")` 
+| fields rSquared</query>
+          <earliest>$earliest$</earliest>
+          <latest>$latest$</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="colorBy">value</option>
+        <option name="colorMode">none</option>
+        <option name="drilldown">none</option>
+        <option name="numberPrecision">0.00</option>
+        <option name="rangeColors">["0x53a051","0x0877a6","0xf8be34","0xf1813f","0xdc4e41"]</option>
+        <option name="rangeValues">[0,30,70,100]</option>
+        <option name="refresh.display">progressbar</option>
+        <option name="showSparkline">1</option>
+        <option name="showTrendIndicator">1</option>
+        <option name="trellis.enabled">0</option>
+        <option name="trellis.scales.shared">1</option>
+        <option name="trellis.size">medium</option>
+        <option name="trendColorInterpretation">standard</option>
+        <option name="trendDisplayMode">absolute</option>
+        <option name="unitPosition">after</option>
+        <option name="useColors">0</option>
+        <option name="useThousandSeparators">1</option>
+      </single>
+    </panel>
+    <panel>
+      <title>Root Mean Squared Error (RMSE)</title>
+      <single>
+        <search>
+          <query>| inputlookup LSOA_Size.csv 
+| rename lsoa as Codes 
+| append 
+    [| inputlookup Total_Notifiable_Offences.csv ] 
+| append 
+    [| inputlookup aged_44.csv ] 
+| append 
+    [| inputlookup ages_15.csv ] 
+| append 
+    [| inputlookup ages_29.csv ] 
+| append 
+    [| inputlookup ages_64.csv ] 
+| append 
+    [| inputlookup ages_65plus.csv ] 
+| append 
+    [| inputlookup all_ages.csv ] 
+| append 
+    [| inputlookup child_poverty_percent.csv ] 
+| append 
+    [| inputlookup happiness_coefficient.csv ] 
+| append 
+    [| inputlookup household_income.csv 
+    | rename Code as Codes ] 
+| append 
+    [| inputlookup school_absence.csv] 
+| stats values(*) as * by Codes 
+| where isnotnull(size) 
+| eval Name=coalesce(Name,Names) 
+| fields - Names Codes 
+| rename *_now as *_2012_year_minus_1, *_minus_1 as *_2012_minus_2, *_minus_2 as *_2012_minus_3, *_2012 as *_2012_now 
+| fields *_2012_* Name size 
+| rename *_2012_year_minus_1 as *_year_minus_1 *_2012_minus_2 as *_minus_2, *_2012_minus_3 as *_minus_3, *_2012_now as *_now 
+| apply predict_total_crime_per_lsoa_decisiontreeregressor_FieldSelector_0 
+| apply "predict_total_crime_per_lsoa_decisiontreeregressor" 
+| `regressionstatistics("total_notifiable_offences_now", "predicted(total_notifiable_offences_now)")` 
+| fields RMSE</query>
+          <earliest>$earliest$</earliest>
+          <latest>$latest$</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="numberPrecision">0.00</option>
+        <option name="rangeColors">["0x53a051","0x0877a6","0xf8be34","0xf1813f","0xdc4e41"]</option>
+        <option name="refresh.display">progressbar</option>
+      </single>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <title>Top 10 Coefficients</title>
+      <chart>
+        <search>
+          <query>| summary "predict_total_crime_per_lsoa_decisiontreeregressor" limit=10 
+| rename "Decision Tree Summary" as Decision_Tree_Summary 
+| rex field=Decision_Tree_Summary ".*count\:(?&lt;count&gt;[\d]+)" 
+| rex field=Decision_Tree_Summary ".*split\:(?&lt;feature&gt;[\w]+)" 
+| rex field=Decision_Tree_Summary ".*value\:(?&lt;value&gt;[\d]+)" 
+| rex field=Decision_Tree_Summary ".*impurity\:(?&lt;impurity&gt;[\d]+)" 
+| search feature!="N" 
+| stats sum(impurity) as total_impurity sum(value) as total_value sum(count) as total_count by feature 
+| fields feature total_value 
+| sort - total_value limit=10</query>
+          <earliest>$earliest$</earliest>
+          <latest>$latest$</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="charting.chart">bar</option>
+        <option name="charting.drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <title>Actual vs. Predicted Line Chart</title>
+      <viz type="Splunk_ML_Toolkit.LinesViz">
+        <search>
+          <query>| inputlookup LSOA_Size.csv 
+| rename lsoa as Codes 
+| append 
+    [| inputlookup Total_Notifiable_Offences.csv ] 
+| append 
+    [| inputlookup aged_44.csv ] 
+| append 
+    [| inputlookup ages_15.csv ] 
+| append 
+    [| inputlookup ages_29.csv ] 
+| append 
+    [| inputlookup ages_64.csv ] 
+| append 
+    [| inputlookup ages_65plus.csv ] 
+| append 
+    [| inputlookup all_ages.csv ] 
+| append 
+    [| inputlookup child_poverty_percent.csv ] 
+| append 
+    [| inputlookup happiness_coefficient.csv ] 
+| append 
+    [| inputlookup household_income.csv 
+    | rename Code as Codes ] 
+| append 
+    [| inputlookup school_absence.csv] 
+| stats values(*) as * by Codes 
+| where isnotnull(size) 
+| eval Name=coalesce(Name,Names) 
+| fields - Names Codes 
+| rename *_now as *_2012_year_minus_1, *_minus_1 as *_2012_minus_2, *_minus_2 as *_2012_minus_3, *_2012 as *_2012_now 
+| fields *_2012_* Name size 
+| rename *_2012_year_minus_1 as *_year_minus_1 *_2012_minus_2 as *_minus_2, *_2012_minus_3 as *_minus_3, *_2012_now as *_now 
+| apply predict_total_crime_per_lsoa_decisiontreeregressor_FieldSelector_0 
+| apply "predict_total_crime_per_lsoa_decisiontreeregressor" 
+| table _time, "total_notifiable_offences_now", "predicted(total_notifiable_offences_now)"</query>
+          <earliest>$earliest$</earliest>
+          <latest>$latest$</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+        <option name="trellis.enabled">0</option>
+        <option name="trellis.scales.shared">1</option>
+        <option name="trellis.size">medium</option>
+      </viz>
+    </panel>
+    <panel>
+      <title>Actual vs. Predicted Scatter Chart</title>
+      <viz type="Splunk_ML_Toolkit.ScatterLineViz">
+        <search>
+          <query>| inputlookup LSOA_Size.csv 
+| rename lsoa as Codes 
+| append 
+    [| inputlookup Total_Notifiable_Offences.csv ] 
+| append 
+    [| inputlookup aged_44.csv ] 
+| append 
+    [| inputlookup ages_15.csv ] 
+| append 
+    [| inputlookup ages_29.csv ] 
+| append 
+    [| inputlookup ages_64.csv ] 
+| append 
+    [| inputlookup ages_65plus.csv ] 
+| append 
+    [| inputlookup all_ages.csv ] 
+| append 
+    [| inputlookup child_poverty_percent.csv ] 
+| append 
+    [| inputlookup happiness_coefficient.csv ] 
+| append 
+    [| inputlookup household_income.csv 
+    | rename Code as Codes ] 
+| append 
+    [| inputlookup school_absence.csv] 
+| stats values(*) as * by Codes 
+| where isnotnull(size) 
+| eval Name=coalesce(Name,Names) 
+| fields - Names Codes 
+| rename *_now as *_2012_year_minus_1, *_minus_1 as *_2012_minus_2, *_minus_2 as *_2012_minus_3, *_2012 as *_2012_now 
+| fields *_2012_* Name size 
+| rename *_2012_year_minus_1 as *_year_minus_1 *_2012_minus_2 as *_minus_2, *_2012_minus_3 as *_minus_3, *_2012_now as *_now 
+| apply predict_total_crime_per_lsoa_decisiontreeregressor_FieldSelector_0 
+| apply "predict_total_crime_per_lsoa_decisiontreeregressor" 
+| table "total_notifiable_offences_now" "predicted(total_notifiable_offences_now)"</query>
+          <earliest>$earliest$</earliest>
+          <latest>$latest$</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="Splunk_ML_Toolkit.ScatterLineViz.identityLine">off</option>
+        <option name="drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+        <option name="trellis.enabled">0</option>
+        <option name="trellis.scales.shared">1</option>
+        <option name="trellis.size">medium</option>
+      </viz>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <title>Residuals Line Chart</title>
+      <viz type="Splunk_ML_Toolkit.LinesViz">
+        <search>
+          <query>| inputlookup LSOA_Size.csv 
+| rename lsoa as Codes 
+| append 
+    [| inputlookup Total_Notifiable_Offences.csv ] 
+| append 
+    [| inputlookup aged_44.csv ] 
+| append 
+    [| inputlookup ages_15.csv ] 
+| append 
+    [| inputlookup ages_29.csv ] 
+| append 
+    [| inputlookup ages_64.csv ] 
+| append 
+    [| inputlookup ages_65plus.csv ] 
+| append 
+    [| inputlookup all_ages.csv ] 
+| append 
+    [| inputlookup child_poverty_percent.csv ] 
+| append 
+    [| inputlookup happiness_coefficient.csv ] 
+| append 
+    [| inputlookup household_income.csv 
+    | rename Code as Codes ] 
+| append 
+    [| inputlookup school_absence.csv] 
+| stats values(*) as * by Codes 
+| where isnotnull(size) 
+| eval Name=coalesce(Name,Names) 
+| fields - Names Codes 
+| rename *_now as *_2012_year_minus_1, *_minus_1 as *_2012_minus_2, *_minus_2 as *_2012_minus_3, *_2012 as *_2012_now 
+| fields *_2012_* Name size 
+| rename *_2012_year_minus_1 as *_year_minus_1 *_2012_minus_2 as *_minus_2, *_2012_minus_3 as *_minus_3, *_2012_now as *_now 
+| apply predict_total_crime_per_lsoa_decisiontreeregressor_FieldSelector_0 
+| apply "predict_total_crime_per_lsoa_decisiontreeregressor" 
+| eval residual = 'total_notifiable_offences_now' - 'predicted(total_notifiable_offences_now)' 
+| table _time, residual</query>
+          <earliest>$earliest$</earliest>
+          <latest>$latest$</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+        <option name="trellis.enabled">0</option>
+        <option name="trellis.scales.shared">1</option>
+        <option name="trellis.size">medium</option>
+      </viz>
+    </panel>
+    <panel>
+      <title>Residuals Histogram</title>
+      <viz type="Splunk_ML_Toolkit.HistogramViz">
+        <search>
+          <query>| inputlookup LSOA_Size.csv 
+| rename lsoa as Codes 
+| append 
+    [| inputlookup Total_Notifiable_Offences.csv ] 
+| append 
+    [| inputlookup aged_44.csv ] 
+| append 
+    [| inputlookup ages_15.csv ] 
+| append 
+    [| inputlookup ages_29.csv ] 
+| append 
+    [| inputlookup ages_64.csv ] 
+| append 
+    [| inputlookup ages_65plus.csv ] 
+| append 
+    [| inputlookup all_ages.csv ] 
+| append 
+    [| inputlookup child_poverty_percent.csv ] 
+| append 
+    [| inputlookup happiness_coefficient.csv ] 
+| append 
+    [| inputlookup household_income.csv 
+    | rename Code as Codes ] 
+| append 
+    [| inputlookup school_absence.csv] 
+| stats values(*) as * by Codes 
+| where isnotnull(size) 
+| eval Name=coalesce(Name,Names) 
+| fields - Names Codes 
+| rename *_now as *_2012_year_minus_1, *_minus_1 as *_2012_minus_2, *_minus_2 as *_2012_minus_3, *_2012 as *_2012_now 
+| fields *_2012_* Name size 
+| rename *_2012_year_minus_1 as *_year_minus_1 *_2012_minus_2 as *_minus_2, *_2012_minus_3 as *_minus_3, *_2012_now as *_now 
+| apply predict_total_crime_per_lsoa_decisiontreeregressor_FieldSelector_0 
+| apply "predict_total_crime_per_lsoa_decisiontreeregressor" 
+| eval residual = 'total_notifiable_offences_now' - 'predicted(total_notifiable_offences_now)' 
+| `histogram(residual, 100)` 
+| rename count as "Sample Count", residual as "Residual Error"</query>
+          <earliest>$earliest$</earliest>
+          <latest>$latest$</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+        <option name="trellis.enabled">0</option>
+        <option name="trellis.scales.shared">1</option>
+        <option name="trellis.size">medium</option>
+      </viz>
+    </panel>
+  </row>
+</dashboard>

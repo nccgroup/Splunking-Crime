@@ -1,0 +1,79 @@
+[app/ui]
+version = 7.1.2
+modtime = 1535645149.623230000
+
+[app/launcher]
+version = 7.1.2
+modtime = 1535645149.626612000
+
+[lookups/aged_44.csv]
+access = read : [ * ], write : [ * ]
+export = system
+version = 7.1.2
+modtime = 1535988904.348666000
+
+[lookups/ages_15.csv]
+access = read : [ * ], write : [ * ]
+export = system
+version = 7.1.2
+modtime = 1535716422.632021000
+
+[views/preprocessing_by_k_means_clustering]
+access = read : [ * ], write : [ * ]
+export = system
+owner = admin
+version = 7.1.2
+modtime = 1535989137.890905000
+
+[views/preprocessing_by_anomaly_score]
+access = read : [ * ], write : [ * ]
+export = system
+owner = admin
+version = 7.1.2
+modtime = 1535989142.691966000
+
+[nav/default]
+version = 7.1.2
+modtime = 1536167949.194559000
+
+[views/preprocessing_by_prediction_ability]
+access = read : [ * ], write : [ * ]
+export = system
+owner = admin
+version = 7.1.2
+modtime = 1535989133.251987000
+
+[views/crime_prediction_model_per_lsoa_linear_regression]
+access = read : [ * ], write : [ * ]
+export = system
+owner = admin
+version = 7.1.2
+modtime = 1536158723.987639000
+
+[views/crime_prediction_model_per_lsoa_decisiontreeregressor]
+access = read : [ * ], write : [ * ]
+export = system
+owner = admin
+version = 7.1.2
+modtime = 1536160799.578040000
+
+[views/crime_prediction_model_per_lsoa_lasso]
+access = read : [ * ], write : [ * ]
+export = system
+owner = admin
+version = 7.1.2
+modtime = 1536157576.819062000
+
+[views/crime_prediction_model_per_lsoa_ridge]
+access = read : [ * ], write : [ * ]
+export = system
+owner = admin
+version = 7.1.2
+modtime = 1536159050.459535000
+
+[views/crime_prediction_for_next_year_using_decision_tree_regressor_algorithm]
+access = read : [ * ], write : [ * ]
+export = system
+owner = admin
+version = 7.1.2
+modtime = 1536167785.053799000

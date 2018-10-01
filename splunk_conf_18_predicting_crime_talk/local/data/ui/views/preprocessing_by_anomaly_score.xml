@@ -1,0 +1,139 @@
+<dashboard>
+  <label>Pre-Processing by Anomaly Score</label>
+  <description>Using command anomalousvalue we compute an anomaly score for each field of each event, relative to the values of this field across other events. For numerical fields, it identifies or summarizes the values in the data that are anomalous either by frequency of occurrence or number of standard deviations from the mean.</description>
+  <row>
+    <panel>
+      <title>Pre-Processing by Anomaly Score for Total Notifiable Offences</title>
+      <chart>
+        <search>
+          <query>| inputlookup LSOA_Size.csv 
+| rename lsoa as Codes 
+| append 
+    [| inputlookup Total_Notifiable_Offences.csv ] 
+| append 
+    [| inputlookup aged_44.csv ] 
+| append 
+    [| inputlookup ages_15.csv ] 
+| append 
+    [| inputlookup ages_29.csv ] 
+| append 
+    [| inputlookup ages_64.csv ] 
+| append 
+    [| inputlookup ages_65plus.csv ] 
+| append 
+    [| inputlookup all_ages.csv ] 
+| append 
+    [| inputlookup child_poverty_percent.csv ] 
+| append 
+    [| inputlookup happiness_coefficient.csv ] 
+| append 
+    [| inputlookup household_income.csv 
+    | rename Code as Codes ] 
+| append 
+    [| inputlookup school_absence.csv] 
+| stats values(*) as * by Codes 
+| where isnotnull(size) 
+| eval Name=coalesce(Name,Names) 
+| fields - Names *_2012 total_anomaly_score_total_notifiable_offences_now
+| convert auto(*) 
+| anomalousvalue action=annotate 
+| rename Anomaly_Score_Num(*) as anomaly_* 
+| fields Codes anomaly_* 
+| stats sum(anomaly_*) as total_anomaly_score_* 
+| transpose 
+| rename column as field, "row 1" as total_anomaly_score 
+| sort total_anomaly_score</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="charting.axisLabelsX.majorLabelStyle.overflowMode">ellipsisNone</option>
+        <option name="charting.axisLabelsX.majorLabelStyle.rotation">0</option>
+        <option name="charting.axisTitleX.visibility">visible</option>
+        <option name="charting.axisTitleY.visibility">visible</option>
+        <option name="charting.axisTitleY2.visibility">visible</option>
+        <option name="charting.axisX.abbreviation">none</option>
+        <option name="charting.axisX.scale">linear</option>
+        <option name="charting.axisY.abbreviation">none</option>
+        <option name="charting.axisY.scale">linear</option>
+        <option name="charting.axisY2.abbreviation">none</option>
+        <option name="charting.axisY2.enabled">0</option>
+        <option name="charting.axisY2.scale">inherit</option>
+        <option name="charting.chart">bar</option>
+        <option name="charting.chart.bubbleMaximumSize">50</option>
+        <option name="charting.chart.bubbleMinimumSize">10</option>
+        <option name="charting.chart.bubbleSizeBy">area</option>
+        <option name="charting.chart.nullValueMode">gaps</option>
+        <option name="charting.chart.showDataLabels">none</option>
+        <option name="charting.chart.sliceCollapsingThreshold">0.01</option>
+        <option name="charting.chart.stackMode">default</option>
+        <option name="charting.chart.style">shiny</option>
+        <option name="charting.drilldown">none</option>
+        <option name="charting.layout.splitSeries">0</option>
+        <option name="charting.layout.splitSeries.allowIndependentYRanges">0</option>
+        <option name="charting.legend.labelStyle.overflowMode">ellipsisMiddle</option>
+        <option name="charting.legend.mode">standard</option>
+        <option name="charting.legend.placement">bottom</option>
+        <option name="charting.lineWidth">2</option>
+        <option name="trellis.enabled">0</option>
+        <option name="trellis.scales.shared">1</option>
+        <option name="trellis.size">medium</option>
+      </chart>
+    </panel>
+    <panel>
+      <title>Top 5 Least Anomalous Fields for Total Notifiable Offences</title>
+      <table>
+        <search>
+          <query>| inputlookup LSOA_Size.csv 
+| rename lsoa as Codes 
+| append 
+    [| inputlookup Total_Notifiable_Offences.csv ] 
+| append 
+    [| inputlookup aged_44.csv ] 
+| append 
+    [| inputlookup ages_15.csv ] 
+| append 
+    [| inputlookup ages_29.csv ] 
+| append 
+    [| inputlookup ages_64.csv ] 
+| append 
+    [| inputlookup ages_65plus.csv ] 
+| append 
+    [| inputlookup all_ages.csv ] 
+| append 
+    [| inputlookup child_poverty_percent.csv ] 
+| append 
+    [| inputlookup happiness_coefficient.csv ] 
+| append 
+    [| inputlookup household_income.csv 
+    | rename Code as Codes ] 
+| append 
+    [| inputlookup school_absence.csv] 
+| stats values(*) as * by Codes 
+| where isnotnull(size) 
+| eval Name=coalesce(Name,Names) 
+| fields - Names *_2012 total_notifiable_offences_now
+| convert auto(*) 
+| anomalousvalue action=annotate 
+| rename Anomaly_Score_Num(*) as anomaly_* 
+| fields Codes anomaly_* 
+| stats sum(anomaly_*) as total_anomaly_score_* 
+| transpose 
+| rename column as field, "row 1" as total_anomaly_score 
+| sort total_anomaly_score limit=5</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="count">20</option>
+        <option name="dataOverlayMode">none</option>
+        <option name="drilldown">none</option>
+        <option name="percentagesRow">false</option>
+        <option name="refresh.display">progressbar</option>
+        <option name="rowNumbers">false</option>
+        <option name="totalsRow">false</option>
+        <option name="wrap">true</option>
+      </table>
+    </panel>
+  </row>
+</dashboard>
