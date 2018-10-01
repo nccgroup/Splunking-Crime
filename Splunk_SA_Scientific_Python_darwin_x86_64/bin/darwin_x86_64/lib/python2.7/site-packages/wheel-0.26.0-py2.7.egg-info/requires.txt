@@ -1,0 +1,14 @@
+
+[:python_version=="2.6"]
+argparse
+
+[faster-signatures]
+ed25519ll
+
+[signatures]
+keyring
+
+[signatures:sys_platform!="win32"]
+pyxdg
+
+[tool]
