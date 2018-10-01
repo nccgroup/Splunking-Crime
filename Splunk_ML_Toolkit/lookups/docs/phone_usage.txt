@@ -1,0 +1,49 @@
+1. Objective:
+  We want to detect outliers in the number of calls that are incoming, outgoing, or missed from various phones.
+
+2. License:
+		CRAWDAD Data License
+		Dear Licensee:
+
+		Thank you for your interest in obtaining and using data from the CRAWDAD archive, hereinafter referred to as "Data". CRAWDAD is the Community Resource for Archiving Wireless Data At Dartmouth, and is operated by Dartmouth College under a grant from the National Science Foundation.
+		Data Licensing Information:
+
+		Dartmouth College hereby grants a nonexclusive, nontransferable license to use the Data for commercial, educational, and research purposes only. The Data shall not be redistributed without the express written prior approval of Dartmouth College.
+
+		Licensee agrees to respect the privacy of those human subjects whose wireless-network activity is captured by the Data. Do not attempt to reverse the anonymization process to identify specific MAC addresses, IP address, telephone number, or other identifiers, or to identify their actual location. Use only the header information in packet traces; do not attempt to extract further information. (Header information specifies the type of information that is being transferred over the network, and specifically excludes the contents of the data, such as usernames, passwords, filenames, files, or URLs.)
+
+		Licensee agrees to acknowledge the source of the Data in any publications reporting on Licensee's use of it. For example, "We gratefully acknowledge the use of wireless data from the CRAWDAD archive at Dartmouth College."
+
+		Dartmouth expressly reserves the right to use the Data by its faculty, staff and researchers, for educational and research purposes. Dartmouth further reserves the right to provide Data Providers with statistical information regarding licensee's access to and use of the Provider's Data and with the Licensee's name and address.
+
+		Dartmouth College provides the Data "AS IS," without any warranty or promise of technical support, and disclaims any liability of any kind for any damages whatsoever resulting from use of Data.
+
+		DARTMOUTH MAKES NO WARRANTIES, EXPRESS OR IMPLIED WITH RESPECT TO THE DATA, INCLUDING ANY IMPLIED WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE, WHICH ARE HEREBY EXPRESSLY DISCLAIMED.
+
+		Your acceptance and use of the Data binds you to the terms and conditions of this License as stated herein.
+
+		Trustees of Dartmouth College
+		David F. Kotz, Ph.D.
+		Professor of Computer Science
+		6211 Sudikoff Lab
+		Hanover, NH 03755
+		USA
+
+		E-mail: kotz@cs.dartmouth.edu
+
+3. Data Source: http://crawdad.org/ctu/personal/20120315/
+
+4. Data Set Information:
+  This dataset contains 142 days of mobile phone records. The data is from the mobile phone of Czech Ph.D. student Michal Ficek, between 2010 and 2011.
+
+5. Field Meanings:
+  A. _time: date and time
+  B. type: Voice, SMS, or Data
+  C. direction: Incoming, Outgoing, or Missed. (Note: when type=Data, the direction is always outgoing.)
+  D. duration: a value in seconds when type=Voice. It's equal to 0 when type=SMS. (I am not sure what duration means when type=Data. It may be data usage.)
+
+6. Parameter Selection:
+  A. Dashboard: Detect Categorical Outliers
+      Settings:
+    1) Search: | inputlookup phone_usage.csv | eval _time=strptime(_time, "%Y-%m-%d %H:%M:%S") | where type="Voice" | timechart count("duration") span=12h by direction
+    2) Fields to use: Incoming, Missed call, Outgoing

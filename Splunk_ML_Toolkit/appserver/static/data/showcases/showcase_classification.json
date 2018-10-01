@@ -1,0 +1,154 @@
+
+{
+    "Disk Failures": {
+        "title": "Predict Hard Drive Failure",
+        "type": "predict_categorical_fields",
+        "dataSource": {
+            "searchString": "| inputlookup disk_failures.csv | eventstats max(SMART_1_Raw) as max1 min(SMART_1_Raw) as min1 | eventstats max(SMART_2_Raw) as max2 min(SMART_2_Raw) as min2 | eventstats max(SMART_3_Raw) as max3 min(SMART_3_Raw) as min3 | eventstats max(SMART_4_Raw) as max4 min(SMART_4_Raw) as min4 | eventstats max(SMART_5_Raw) as max5 min(SMART_5_Raw) as min5 | eval SMART_1_Transformed = (SMART_1_Raw - min1)/(max1-min1) | eval SMART_2_Transformed = (SMART_2_Raw - min2)/(max2-min2) | eval SMART_3_Transformed = (SMART_3_Raw - min3)/(max3-min3) | eval SMART_4_Transformed = (SMART_4_Raw - min4)/(max4-min4) | eval SMART_5_Transformed = (SMART_5_Raw - min5)/(max5-min5) | table Date Model CapacityBytes SerialNumber DiskFailure SMART_1_Raw SMART_1_Transformed SMART_2_Raw SMART_2_Transformed SMART_3_Raw SMART_3_Transformed SMART_4_Raw SMART_4_Transformed SMART_5_Raw SMART_5_Transformed",
+            "type": "SPL",
+            "earliestTime": "",
+            "latestTime": ""
+        },
+        "searchStages": [
+            {
+                "type": "fit",
+                "algorithm": "LogisticRegression",
+                "targetVariable": "DiskFailure",
+                "featureVariables": [
+                    "Model",
+                    "SMART_1_Transformed",
+                    "SMART_2_Transformed",
+                    "SMART_3_Transformed",
+                    "SMART_4_Transformed",
+                    "SMART_5_Transformed"
+                ],
+                "algorithmParams": {
+                    "fit_intercept": true
+                },
+                "modelName": "example_disk_failures"
+            }
+        ]
+    },
+    "Malware": {
+        "title": "Predict the Presence of Malware",
+        "type": "predict_categorical_fields",
+        "dataSource": {
+            "searchString": "| inputlookup firewall_traffic.csv | head 50000",
+            "type": "SPL",
+            "earliestTime": "",
+            "latestTime": ""
+        },
+        "searchStages": [
+            {
+                "type": "fit",
+                "algorithm": "LogisticRegression",
+                "targetVariable": "used_by_malware",
+                "featureVariables": [
+                    "bytes_sent",
+                    "bytes_received",
+                    "packets_sent",
+                    "packets_received",
+                    "dest_port",
+                    "src_port",
+                    "has_known_vulnerability"
+                ],
+                "algorithmParams": {
+                    "fit_intercept": true
+                },
+                "modelName": "example_malware"
+            }
+        ]
+    },
+    "Churn": {
+        "title": "Predict Telecom Customer Churn",
+        "type": "predict_categorical_fields",
+        "dataSource": {
+            "searchString": "| inputlookup churn.csv",
+            "type": "SPL",
+            "earliestTime": "",
+            "latestTime": ""
+        },
+        "searchStages": [
+            {
+                "type": "fit",
+                "algorithm": "LogisticRegression",
+                "targetVariable": "Churn?",
+                "featureVariables": [
+                    "Day Mins",
+                    "Eve Mins",
+                    "Night Mins",
+                    "Night Charge",
+                    "Int'l Plan",
+                    "Intl Mins",
+                    "Intl Calls",
+                    "Intl Charge",
+                    "CustServ Calls",
+                    "VMail Plan"
+                ],
+                "algorithmParams": {
+                    "fit_intercept": true
+                },
+                "modelName": "example_churn"
+            }
+        ]
+    },
+    "Diabetes": {
+        "title": "Predict the Presence of Diabetes",
+        "type": "predict_categorical_fields",
+        "dataSource": {
+            "searchString": "| inputlookup diabetes.csv",
+            "type": "SPL",
+            "earliestTime": "",
+            "latestTime": ""
+        },
+        "searchStages": [
+            {
+                "type": "fit",
+                "algorithm": "LogisticRegression",
+                "targetVariable": "response",
+                "featureVariables": [
+                    "number_pregnant",
+                    "glucose_concentration",
+                    "BMI",
+                    "diabetes_pedigree",
+                    "age",
+                    "blood_pressure"
+                ],
+                "algorithmParams": {
+                    "fit_intercept": true
+                },
+                "modelName": "example_diabetes"
+            }
+        ]
+    },
+    "Race Cars": {
+        "title": "Predict Vehicle Make and Model",
+        "type": "predict_categorical_fields",
+        "dataSource": {
+            "searchString": "| inputlookup track_day.csv",
+            "type": "SPL",
+            "earliestTime": "",
+            "latestTime": ""
+        },
+        "searchStages": [
+            {
+                "type": "fit",
+                "algorithm": "LogisticRegression",
+                "targetVariable": "vehicleType",
+                "featureVariables": [
+                    "batteryVoltage",
+                    "engineCoolantTemperature",
+                    "engineSpeed",
+                    "lateralGForce",
+                    "longitudeGForce",
+                    "speed",
+                    "verticalGForce"
+                ],
+                "algorithmParams": {
+                    "fit_intercept": true
+                },
+                "modelName": "example_vehicle_type"
+            }
+        ]
+    }
+}

@@ -1,0 +1,37 @@
+1. Objective:
+  We want to predict the vehicle type given other onboard metrics.
+
+2. License: Free to use, collected by Splunk.
+
+3. Data Source:
+  Splunk's annual Track Day!
+
+4. Data Set Information:
+  The dataset contains 50,000 instantaneous measurements collected via onboard instrumentation from several vehicles while being driven around a racetrack.
+
+5. Field Meanings:
+  A. batteryVoltage - battery voltage in volts (surprise!)
+  B. engineCoolantTemperature - degrees celcius
+  C. engineSpeed - rotations per minute
+  D. lateralGForce - left/right
+  E. longitudeGForce - front/back
+  F. speed - miles per hour
+  G. vehicleType - year, make, and model
+  H. verticalGForce - up/down
+
+6. Parameter Selection:
+  A. Dashboard: Predict Categorical Fields
+      Settings:
+    1) Field to predict: vehicleType
+    2) Fields to use for predicting: batteryVoltage, engineCoolantTemperature, engineSpeed, lateralGForce, longitudeGForce, speed, and verticalGForce
+
+  B. Dashboard: Cluster Numeric Fields
+        Settings:
+    0) Search: | inputlookup track_day.csv
+    1) Model name: track_day
+    2) Fields to preprocess: batteryVoltage, engineCoolantTemperature, engineSpeed, lateralGForce, longitudeGForce, speed, verticalGForce
+    3) Apply StandardScaler
+    4) Apply PCA to reduce to 3 fields
+    5) Algorithm: Birch
+    6) Fields to use: PC_1, PC_2, PC_3
+    7) K: 6

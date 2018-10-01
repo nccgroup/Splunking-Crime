@@ -1,0 +1,22 @@
+1. Objective:
+  We want to forecast the peak and off-peak times of internet usage given a few full cycles of internet traffic history.
+
+2. License: Free to use but requires citation of the following paper: P. Cortez, M. Rio, M. Rocha and P. Sousa. Multiscale Internet Traffic Forecasting using Neural Networks and Time Series Methods. In Expert Systems, Wiley-Blackwell, In press.
+
+3. Data Source: https://datamarket.com/data/set/232n/internet-traffic-data-in-bits-from-a-private-isp-with-centres-in-11-european-cities-the-data-corresponds-to-a-transatlantic-link-and-was-collected-from-0657-hours-on-7-june-to-1117-hours-on-31-july-2005-data-collected-at-five-minute-intervals#!ds=232n&display=line
+
+4. Data Set Information:
+  Internet traffic data (in bits) from a private ISP with centers in 11 European cities. The data corresponds to a transatlantic link and was collected from 06:57 hours on 7 June to 11:17 hours on 31 July 2005. Data collected at five minute intervals.
+
+5. Field Meanings:
+  A. _time: UNIX epoch time (local time)
+  B. bits_transferred: Data transferred in bits and collected at five-minute intervals, aggregated in 120-minute bin size.
+
+6. Parameter Selection:
+  A.  Dashboard: Forecast Time Series
+      Settings:
+    1) Search command: | inputlookup internet_traffic.csv | timechart span=120min avg("bits_transferred") as traffic | eval traffic=round(traffic)
+    2) Field to predict: traffic
+    1) Method: LLP
+    2) Withhold: 112
+    3) Forecast: 112

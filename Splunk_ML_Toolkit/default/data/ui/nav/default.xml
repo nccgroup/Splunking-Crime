@@ -1,0 +1,23 @@
+<nav search_view="search" color="#CF5300">
+  <view name="contents" default="true"/>
+  <view name="experiments"/>
+  <view name="search"/>
+  <view name="models"/>
+  <collection label="Classic">
+     <view name="alerts"/>
+     <a href="reports">Scheduled Training</a>
+     <collection label="Assistants">
+       <view name="showcase_linear_regression"></view>
+       <view name="showcase_classification"></view>
+       <divider />
+       <view name="showcase_outlier_detection"></view>
+       <view name="showcase_categorical_outlier_detection"></view>
+       <divider />
+       <view name="showcase_forecast"></view>
+       <divider />
+       <view name="showcase_clustering"></view>
+    </collection>
+  </collection>
+  <a href="http://docs.splunk.com/Documentation/MLApp">Docs</a>
+  <a href="http://tiny.cc/splunkmlvideos">Video Tutorials</a>
+</nav>

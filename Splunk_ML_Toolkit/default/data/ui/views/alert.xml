@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<view template="Splunk_ML_Toolkit:/templates/core_pages/base.html" type="html" isDashboard="False">
+    <label>Alert</label>
+</view>

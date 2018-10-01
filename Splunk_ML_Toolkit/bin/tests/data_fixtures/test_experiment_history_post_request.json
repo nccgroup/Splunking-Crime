@@ -1,0 +1,30 @@
+{
+    "experimentId": "2e253aa6a42e4ca2bb2e2f0b9000b1b9",
+    "status": "success",
+    "sid": "some sid",
+    "dataSource": {
+        "type": "SPL",
+        "searchString": "| some_command",
+        "earliestTime": "now",
+        "latestTime": "-2w@d+3h"
+    },
+    "searchStages": [
+        {
+            "type": "fit",
+            "role": "main",
+            "featureVariables": [
+                "longitudeForce",
+                "speed"
+            ],
+            "targetVariable": "vehicleType",
+            "algorithmParams": {
+                "C": 100,
+                "gamma": 0.1
+            },
+            "algorithm": "SVM",
+            "modelName": "SVM_model"
+        }
+    ],
+    "description": "",
+    "notes": ""
+}

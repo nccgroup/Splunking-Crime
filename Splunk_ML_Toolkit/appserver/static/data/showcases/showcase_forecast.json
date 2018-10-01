@@ -1,0 +1,128 @@
+{
+    "Employee Logins": {
+        "title": "Forecast the Number of Employee Logins",
+        "type": "forecast_time_series",
+        "dataSource": {
+            "searchString": "| inputlookup logins.csv",
+            "type": "SPL",
+            "earliestTime": "",
+            "latestTime": ""
+        },
+        "searchStages": [
+            {
+                "type": "predict",
+                "fields": [
+                    "logins"
+                ],
+                "params": {
+                    "algorithm": "LLP",
+                    "holdback": 114,
+                    "future_timespan": 150,
+                    "upper95": "upper95",
+                    "lower95": "lower95"
+                }
+            }
+        ]
+    },
+    "Souvenir Sales": {
+        "title": "Forecast Monthly Sales",
+        "type": "forecast_time_series",
+        "dataSource": {
+            "searchString": "| inputlookup souvenir_sales.csv | eval _time=strptime(Month, \"%Y-%m-%d\") | timechart span=1mon values(sales) as sales",
+            "type": "SPL",
+            "earliestTime": "",
+            "latestTime": ""
+        },
+        "searchStages": [
+            {
+                "type": "predict",
+                "fields": [
+                    "sales"
+                ],
+                "params": {
+                    "algorithm": "LLP",
+                    "holdback": 0,
+                    "future_timespan": 24,
+                    "upper95": "upper95",
+                    "lower95": "lower95"
+                }
+            }
+        ]
+    },
+    "Internet Traffic": {
+        "title": "Forecast Internet Traffic",
+        "type": "forecast_time_series",
+        "dataSource": {
+            "searchString": "| inputlookup internet_traffic.csv | timechart span=120min avg(\"bits_transferred\") as bits_transferred | eval bits_transferred=round(bits_transferred)",
+            "type": "SPL",
+            "earliestTime": "",
+            "latestTime": ""
+        },
+        "searchStages": [
+            {
+                "type": "predict",
+                "fields": [
+                    "bits_transferred"
+                ],
+                "params": {
+                    "algorithm": "LLP5",
+                    "holdback": 112,
+                    "future_timespan": 224,
+                    "upper95": "upper95",
+                    "lower95": "lower95"
+                }
+            }
+        ]
+    },
+    "Bluetooth Devices": {
+        "title": "Forecast the Number of Bluetooth Devices",
+        "type": "forecast_time_series",
+        "dataSource": {
+            "searchString": "| inputlookup bluetooth.csv | where probe=\"AxisBoard-5\" | timechart dc(address) as distinct_addresses span=3h",
+            "type": "SPL",
+            "earliestTime": "",
+            "latestTime": ""
+        },
+        "searchStages": [
+            {
+                "type": "predict",
+                "fields": [
+                    "distinct_addresses"
+                ],
+                "params": {
+                    "algorithm": "LLP",
+                    "holdback": 100,
+                    "future_timespan": 200,
+                    "upper95": "upper95",
+                    "lower95": "lower95"
+                }
+            }
+        ]
+    },
+    "Exchange Rate ARIMA": {
+        "title": "Forecast Exchange Rate TWI using ARIMA",
+        "type": "forecast_time_series",
+        "dataSource": {
+            "searchString": "| inputlookup exchange.csv",
+            "type": "SPL",
+            "earliestTime": "",
+            "latestTime": ""
+        },
+        "searchStages": [
+            {
+                "type": "fit",
+                "algorithm": "ARIMA",
+                "targetVariable": "",
+                "featureVariables": [
+                    "rate"
+                ],
+                "algorithmParams": {
+                    "order": "1-0-1",
+                    "holdback": 5,
+                    "forecast_k": 10,
+                    "conf_interval": 95
+                }
+            }
+        ]
+    }
+}

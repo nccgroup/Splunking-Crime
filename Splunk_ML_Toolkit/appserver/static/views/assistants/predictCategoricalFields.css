@@ -1,0 +1,27 @@
+#confusionMatrixPanel thead th {
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+
+}
+#confusionMatrixPanel tbody td.string,
+#confusionMatrixPanel thead th:first-child
+{
+    border-right: 1px solid #000;
+}
+
+#dataAndPredictionsPanel thead th:nth-child(1), #dataAndPredictionsPanel thead th:nth-child(2) {
+    font-weight: bold;
+}
+
+#dataAndPredictionsPanel thead th:nth-child(2), #dataAndPredictionsPanel tbody td:nth-child(2) {
+    border-right: 1px solid #000;
+}
+
+/* TableViews don't have any bottom padding so this adds space between the table and the footer buttons */
+#confusionMatrixPanel .mlts-panel-footer {
+    margin-top: 15px;
+}
+
+#trainingSetFractionSliderValue {
+    font-weight: bold;
+}

@@ -1,0 +1,61 @@
+<%!
+if cherrypy.config['product_type'] == 'hunk':
+        faviconFile = 'favicon_hunk.ico'
+elif cherrypy.config['product_type'] == 'enterprise':
+        faviconFile = 'favicon.ico'
+else:
+        faviconFile = 'favicon.ico'
+
+app_name = cherrypy.request.path_info.split('/')[3]
+app_root = "/" + "/".join(["static","app",app_name])
+css_path = app_root + "/bootstrap-enterprise.css"
+
+%>\
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>
+        Machine Learning Toolkit
+    </title>
+    <meta name="description" content="ml-app">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" type="text/css" href="${make_url(css_path)}" />
+
+    <%
+    page_css_path = "/static/app/" + app_name + "/style/css/" + page + ".css"
+    %>
+
+    <link rel="stylesheet" type="text/css" href="${make_url(page_css_path)}" />
+</head>
+
+<body>
+	<%
+	config_qs = dict(autoload=1)
+	if hasattr(cherrypy.request, 'guest_pass') and cherrypy.request.guest_pass:
+		config_qs['guest_pass'] = 1
+	%>
+
+    <script src="${make_url('/config', _qs=config_qs)}"></script>
+    <script src="${make_url('/static/js/i18n.js')}"></script>
+    <script src="${make_url('/i18ncatalog?autoload=1')}"></script>
+    <script>
+        __splunkd_partials__ = ${json_decode(splunkd)};
+    </script>
+
+	<%
+	page_path = "/static/app/" + app_name + "/" + page + ".js"
+	common_path = "/static/app/" + app_name + "/pages_common.js"
+	%>
+
+	<script src="${make_url(common_path)}"></script>
+	<script src="${make_url(page_path)}"></script>
+
+</body>
+
+</html>

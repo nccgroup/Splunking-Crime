@@ -1,0 +1,37 @@
+1. Objective: We want to predict whether a customer will change providers (denoted as Churn) based on the usage pattern of customers.
+
+2.	License: Free to use, with citation request.
+
+3. Data Source: http://www.sgi.com/tech/mlc/db/churn.all
+
+4. DataSet Info: This is a dataset artificial based on claims similar to real world.
+
+5. Field Meanings:
+	A. State: The State where the customer is from.
+	B. Account Length: How long the account has been active.
+	C. Area Code: Area Code.
+	D. Phone: Phone number.
+	E. Int'l Plan: Indicate whether the customer has International Plan.
+	F. VMail Plan: Indicate whether the customer has Voice Mail Plan.
+	G. VMail Message: Number of voice mail messages.
+	H. Day Mins: Total day minutes.
+	I. Day Calls: Total day calls.
+	J. Day Charge: Total day charge.
+	K. Eve Mins: Total evening minutes.
+	L. Eve Calls: Total evening calls.
+	M. Eve Charge: Total evening charge.
+	N. Night Mins: Total night minutes.
+	O. Night Calls: Total night calls.
+	P. Night Charge: Total night charge.
+	Q. Intl Mins: Total international minutes.
+	R. Intl Calls: Total international calls.
+	S. Intl Charge: Total international charge.
+	T. CustServ Calls: Numbers of calls to customer service.
+	U. Churn?: Whether the customer choose to churn or not.
+
+6. Parameter Selection:
+	A. Dashboard Usage: Predict Categorical Fields
+	Settings:
+	   1) Search command: | inputlookup churn.csv
+	   2) Field to predict: Churn?
+	   3) Fields to use for predicting: CustServ Calls, Day Mins, Eve Mins, Int'l Plan, Intl Calls, Intl Charge, Intl Mins, Night Charge, Night Mins, VMail Plan

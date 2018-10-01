@@ -1,0 +1,27 @@
+1. Objective:
+  We want to identify outliers in mortgage contracts based on factors like the interest rate and purchase price.
+
+2. License: http://www.fhfa.gov/AboutUs/Policies/Pages/API.aspx
+ "This product uses FHFA Data but is neither endorsed nor certified by FHFA."
+
+3. Data Source:
+  http://www.fhfa.gov/DataTools/Downloads/Pages/Monthly-Interest-Rate-Data.aspx
+
+4. Data Set Information:
+  "The survey provides monthly information on interest rates, loan terms, and house prices by property type (all, new, previously occupied), by loan type (fixed- or adjustable-rate), and by lender type (savings associations, mortgage companies, commercial banks, and savings banks), as well as information on 15-year and​​​ 30-year fixed-rate loans.  In addition, the survey provides quarterly information on conventional loans by major metropolitan area and by Federal Home Loan Bank district."
+
+5. Field Meanings:
+  1. Year: When the mortgage was created
+  2. Contract_interest_rate(%): Interest rate
+  3. Initial_fees_and_charges(%): Initial fees and charges as a percent of purchase price
+  4. Effective_interest_rate(%): Effective interest rate
+  5. Term_to_maturity: Length of the mortgage
+  6. Purchase_price: Total purchase price
+  7. Loan_to_price_ratio(%): Loan to price ratio as a percentage
+  8. Adjustable_rate_loans(%): Adjustable rate loan percentage or NA if fixed-rate.
+
+6. Parameter Selection:
+  A. Dashboard: Detect Categorical Outliers
+      Settings:
+    1) Search: | inputlookup mortgage_loan_ny.csv
+    2) Fields to analyze: Year, Contract_interest_rate(%), Initial_fees_and_charges(%), Effective_interest_rate(%), Term_to_maturity, Purchase_price, Loan_to_price_ratio(%), Adjustable_rate_loans(%)

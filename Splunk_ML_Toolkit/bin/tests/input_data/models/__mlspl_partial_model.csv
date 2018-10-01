@@ -1,0 +1,2 @@
+algo,model,options
+Birch,"{""__mlspl_type"": [""algos.Birch"", ""Birch""], ""dict"": {""estimator"": {""refs"": {}, ""__mlspl_type"": [""sklearn.cluster.birch"", ""Birch""], ""dict"": {""threshold"": 0.5, ""branching_factor"": 50, ""copy"": true, ""compute_labels"": true, ""n_clusters"": 3}}}}","{""params"": {""k"": ""3""}, ""args"": [""petal*""], ""algo_name"": ""Birch"", ""model_name"": ""partial_model"", ""feature_variables"": [""petal*""]}"

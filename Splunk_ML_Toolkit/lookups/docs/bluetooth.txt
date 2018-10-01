@@ -1,0 +1,51 @@
+1. Objective:
+ 	We want to forecast the number of distinct bluetooth contacts that are made to the access points placed in the busiest lecture halls on the campus of the National University of Singapore.
+
+2. License:
+		CRAWDAD Data License
+		Dear Licensee:
+
+		Thank you for your interest in obtaining and using data from the CRAWDAD archive, hereinafter referred to as "Data". CRAWDAD is the Community Resource for Archiving Wireless Data At Dartmouth, and is operated by Dartmouth College under a grant from the National Science Foundation.
+		Data Licensing Information:
+
+		Dartmouth College hereby grants a nonexclusive, nontransferable license to use the Data for commercial, educational, and research purposes only. The Data shall not be redistributed without the express written prior approval of Dartmouth College.
+
+		Licensee agrees to respect the privacy of those human subjects whose wireless-network activity is captured by the Data. Do not attempt to reverse the anonymization process to identify specific MAC addresses, IP address, telephone number, or other identifiers, or to identify their actual location. Use only the header information in packet traces; do not attempt to extract further information. (Header information specifies the type of information that is being transferred over the network, and specifically excludes the contents of the data, such as usernames, passwords, filenames, files, or URLs.)
+
+		Licensee agrees to acknowledge the source of the Data in any publications reporting on Licensee's use of it. For example, "We gratefully acknowledge the use of wireless data from the CRAWDAD archive at Dartmouth College."
+
+		Dartmouth expressly reserves the right to use the Data by its faculty, staff and researchers, for educational and research purposes. Dartmouth further reserves the right to provide Data Providers with statistical information regarding licensee's access to and use of the Provider's Data and with the Licensee's name and address.
+
+		Dartmouth College provides the Data "AS IS," without any warranty or promise of technical support, and disclaims any liability of any kind for any damages whatsoever resulting from use of Data.
+
+		DARTMOUTH MAKES NO WARRANTIES, EXPRESS OR IMPLIED WITH RESPECT TO THE DATA, INCLUDING ANY IMPLIED WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE, WHICH ARE HEREBY EXPRESSLY DISCLAIMED.
+
+		Your acceptance and use of the Data binds you to the terms and conditions of this License as stated herein.
+
+		Trustees of Dartmouth College
+		David F. Kotz, Ph.D.
+		Professor of Computer Science
+		6211 Sudikoff Lab
+		Hanover, NH 03755
+		USA
+
+		E-mail: kotz@cs.dartmouth.edu
+
+3. Data Source: http://crawdad.org/nus/bluetooth/20070903/sql/
+
+4. Data Set Information:
+	This dataset contains Bluetooth contact traces collected in Singapore from 2005-10-31-17 to 2006-06-21 using 12 contact probes (3 static and 9 mobile). The dataset is trimmed to contain only the static probes for the period of 2006-01-01 to 2006-04-10.
+
+5. Field Meanings:
+  A. _time: date and time
+  B. address: anonymized discovered Bluetooth devices
+  C. probe: devices that are used for collecting data
+
+6. Parameter Selection:
+  A.  Dashboard: Forecast Time Series
+      Settings:
+    1) Search: | inputlookup bluetooth.csv | where probe="AxisBoard-5" | timechart dc(address) as distinct_addresses span=3h
+    2) Fields to use: distinct_addresses
+    3) Forecasting Method: LLP
+    4) Withhold Latest k values: 100
+    5) Forecast next k values: 100

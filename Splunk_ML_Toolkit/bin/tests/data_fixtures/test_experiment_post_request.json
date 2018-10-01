@@ -1,0 +1,30 @@
+{
+  "notes": "test_notes",
+  "title": "Test ID",
+  "alertIds": ["test_alert_1"],
+  "searchStages": [
+    {
+      "role": "main",
+      "featureVariables": ["a", "b", "c"],
+      "modelName": "test_model",
+      "algorithm": "test_algo",
+      "algorithmParams": {
+        "a": "a",
+        "c": "c",
+        "b": "b"
+      },
+      "targetVariable": "a",
+      "type": "fit"
+    }
+  ],
+  "dataSource": {
+    "latestTime": "now",
+    "earliestTime": "-2w@d+3h",
+    "searchString": "| test_spl",
+    "type": "SPL"
+  },
+  "description": "test_description",
+  "type": "predict_numeric_fields",
+  "hasSchedule": "1",
+  "hasAlerts": "0"
+}

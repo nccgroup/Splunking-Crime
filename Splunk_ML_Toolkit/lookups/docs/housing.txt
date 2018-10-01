@@ -1,0 +1,40 @@
+1. Objective: We want to predict median home value in a region based on housing value related predictor fields.
+
+2. License: Free to use.
+
+3. Data Source: https://archive.ics.uci.edu/ml/datasets/Housing
+
+4. DataSet Info: Housing values in suburbs of Boston where we have 506 records.
+
+5. Field Meanings:
+	A. crime_rate: Per capita crime rate by town
+	B. land_zone: Proportion of residential land zoned for lots over 25,000 sq.ft.
+	C. business_acres: Proportion of non-retail business acres per town
+	D. charles_river_adjacency: Charles River dummy variable (= 1 if tract bounds river; 0 otherwise)
+	E. nitric_oxide_concentration: Nitric oxides concentration (parts per 10 million)
+	F. avg_rooms_per_dwelling: Average number of rooms per dwelling
+	G. units_prior_1940: Proportion of owner-occupied units built prior to 1940
+	H. distance_to_employment_center: Weighted distances to five Boston employment centres
+	I. highway_accessibility_index: Index of accessibility to radial highways
+	J. property_tax_rate: Full-value property-tax rate per $10,000
+	K. pupil_teacher_ratio: Pupil-teacher ratio by town
+	L. median_house_value: Median value of owner-occupied homes in $1000's
+
+6. Parameter Selection:
+	A. Dashboard Usage: Predict Numerical Fields for business analyst role.
+	Settings:
+	   1) Search command: | inputlookup housing.csv
+	   2) Field to predict: median_house_value
+	   3) Fields to use for predicting: crime_rate, land_zone, nitric_oxide_concentration, avg_rooms_per_dwelling, units_prior_1940, distance_to_employment_center, highway_accessibility_index, property_tax_rate, pupil_teacher_ratio
+
+
+  B. Dashboard: Cluster Numeric Fields
+        Settings:
+    0) Search: | inputlookup housing.csv
+    1) Model name: N/A
+    2) Fields to preprocess: avg_rooms_per_dwelling, business_acres, crime_rate, distance_to_employment_center, highway_accessibility_index, land_zone, median_house_value, nitric_oxide_concentration, property_tax_rate, pupil_teacher_ratio, units_prior_1940
+    3) Apply StandardScaler
+    4) Apply PCA to reduce to 3 fields
+    5) Algorithm: DBSCAN
+    6) Fields to use: PC_1, PC_2, PC_3
+    7) eps: 0.96

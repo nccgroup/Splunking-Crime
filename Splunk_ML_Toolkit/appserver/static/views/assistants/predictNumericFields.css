@@ -1,0 +1,29 @@
+#dataAndPredictionsPanel thead th:nth-child(1), #dataAndPredictionsPanel thead th:nth-child(2), #dataAndPredictionsPanel thead th:nth-child(3) {
+    font-weight: bold;
+}
+
+#dataAndPredictionsPanel thead th:nth-child(3), #dataAndPredictionsPanel tbody td:nth-child(3) {
+    border-right: 1px solid #000;
+}
+
+/* TableViews don't have any bottom padding so this adds space between the table and the footer buttons */
+#fitModelSummaryPanel .mlts-panel-footer {
+    margin-top: 15px;
+}
+
+#trainingSetFractionSliderValue {
+    font-weight: bold;
+}
+
+#actualVsPredictedLinesSortBy > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#actualVsPredictedLinesSortBy label {
+    margin: 0 5px 0 0;
+}
+
+#actualVsPredictedLinesSortBy .splunk-choice-input-message {
+    display: none; /* hide the message, it's never useful and takes vertical room */
+}

@@ -1,0 +1,3 @@
+/* This file is blank currently, but needs to have some content to pass strict MIME type checking and not throw an error.
+ * This is because we assume there is needed css here, but in this case, we inherit from bootstrap styles.
+ */

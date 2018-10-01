@@ -1,0 +1,17 @@
+#singleOutliersPanel .mlts-panel-body, #singleResultsPanel .mlts-panel-body{
+    height: 115px;
+}
+
+.panel-footer {
+    display: none;
+}
+
+/* Anomaly Detection Coloring */
+td.outlier-event {
+    font-weight: bold;
+}
+
+.icon-inline i {
+    font-size: 18px;
+    margin-left: 5px;
+}

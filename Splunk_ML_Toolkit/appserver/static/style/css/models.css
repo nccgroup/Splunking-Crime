@@ -1,0 +1,11 @@
+#modelsListContainer {
+    display: none;
+}
+
+#modelsListContainer .header-table-docked {
+    right: auto!important;
+}
+
+.mltk-tour-button, .mltk-print-button {
+    display: none; /* will add them back in story PBL-5377 */
+}

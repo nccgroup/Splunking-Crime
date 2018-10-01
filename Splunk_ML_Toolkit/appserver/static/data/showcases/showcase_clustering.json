@@ -1,0 +1,254 @@
+{
+    "Disk": {
+        "title": "Cluster Hard Drives by SMART Metrics",
+        "type": "cluster_numeric_events",
+        "dataSource": {
+            "searchString": "| inputlookup disk_failures.csv | search SMART_1_Raw=* | sample 1000",
+            "type": "SPL",
+            "earliestTime": "",
+            "latestTime": ""
+        },
+        "searchStages": [
+            {
+                "type": "fit",
+                "role": "preprocessing",
+                "algorithm": "StandardScaler",
+                "featureVariables": [
+                    "SMART_1_Raw",
+                    "SMART_2_Raw",
+                    "SMART_3_Raw",
+                    "SMART_4_Raw",
+                    "SMART_5_Raw"
+                ],
+                "algorithmParams": {
+                    "with_mean": true,
+                    "with_std": true
+                }
+            },
+            {
+                "type": "fit",
+                "role": "preprocessing",
+                "algorithm": "PCA",
+                "featureVariables": [
+                    "SS_SMART_1_Raw",
+                    "SS_SMART_2_Raw",
+                    "SS_SMART_3_Raw",
+                    "SS_SMART_4_Raw",
+                    "SS_SMART_5_Raw"
+                ],
+                "algorithmParams": {
+                    "k": 4
+                }
+            },
+            {
+                "type": "fit",
+                "algorithm": "KMeans",
+                "featureVariables": [
+                    "PC_1",
+                    "PC_2",
+                    "PC_3",
+                    "PC_4"
+                ],
+                "algorithmParams": {
+                    "k": 3
+                },
+                "modelName": "example_hard_drives"
+            }
+        ]
+    },
+    "Apps": {
+        "title": "Cluster Behavior by App Usage",
+        "type": "cluster_numeric_events",
+        "dataSource": {
+            "searchString": "| inputlookup app_usage.csv",
+            "type": "SPL",
+            "earliestTime": "",
+            "latestTime": ""
+        },
+        "searchStages": [
+            {
+                "type": "fit",
+                "role": "preprocessing",
+                "algorithm": "StandardScaler",
+                "featureVariables": [
+                    "CloudDrive",
+                    "Recruiting",
+                    "RemoteAccess",
+                    "Webmail"
+                ],
+                "algorithmParams": {
+                    "with_mean": true,
+                    "with_std": true
+                }
+            },
+            {
+                "type": "fit",
+                "algorithm": "SpectralClustering",
+                "featureVariables": [
+                    "SS_CloudDrive",
+                    "SS_Recruiting",
+                    "SS_RemoteAccess",
+                    "SS_Webmail"
+                ],
+                "algorithmParams": {
+                    "k": 3
+                }
+            }
+        ]
+    },
+    "Housing": {
+        "title": "Cluster Neighborhoods by Properties",
+        "type": "cluster_numeric_events",
+        "dataSource": {
+            "searchString": "| inputlookup housing.csv",
+            "type": "SPL",
+            "earliestTime": "",
+            "latestTime": ""
+        },
+        "searchStages": [
+            {
+                "type": "fit",
+                "role": "preprocessing",
+                "algorithm": "StandardScaler",
+                "featureVariables": [
+                    "avg_rooms_per_dwelling",
+                    "business_acres",
+                    "crime_rate",
+                    "distance_to_employment_center",
+                    "highway_accessibility_index",
+                    "land_zone",
+                    "median_house_value",
+                    "nitric_oxide_concentration",
+                    "property_tax_rate",
+                    "pupil_teacher_ratio",
+                    "units_prior_1940"
+                ],
+                "algorithmParams": {
+                    "with_mean": true,
+                    "with_std": true
+                }
+            },
+            {
+                "type": "fit",
+                "role": "preprocessing",
+                "algorithm": "PCA",
+                "featureVariables": [
+                    "SS_avg_rooms_per_dwelling",
+                    "SS_business_acres",
+                    "SS_crime_rate",
+                    "SS_distance_to_employment_center",
+                    "SS_highway_accessibility_index",
+                    "SS_land_zone",
+                    "SS_median_house_value",
+                    "SS_nitric_oxide_concentration",
+                    "SS_property_tax_rate",
+                    "SS_pupil_teacher_ratio",
+                    "SS_units_prior_1940"
+                ],
+                "algorithmParams": {
+                    "k": 3
+                }
+            },
+            {
+                "type": "fit",
+                "algorithm": "DBSCAN",
+                "featureVariables": [
+                    "PC_1",
+                    "PC_2",
+                    "PC_3"
+                ],
+                "algorithmParams": {
+                    "eps": 0.96
+                },
+                "modelName": ""
+            }
+        ]
+    },
+    "Track": {
+        "title": "Cluster Vehicles by Onboard Metrics",
+        "type": "cluster_numeric_events",
+        "dataSource": {
+            "searchString": "| inputlookup track_day.csv",
+            "type": "SPL",
+            "earliestTime": "",
+            "latestTime": ""
+        },
+        "searchStages": [
+            {
+                "type": "fit",
+                "role": "preprocessing",
+                "algorithm": "StandardScaler",
+                "featureVariables": [
+                    "batteryVoltage",
+                    "engineCoolantTemperature",
+                    "engineSpeed",
+                    "lateralGForce",
+                    "longitudeGForce",
+                    "speed",
+                    "verticalGForce"
+                ],
+                "algorithmParams": {
+                    "with_mean": true,
+                    "with_std": true
+                }
+            },
+            {
+                "type": "fit",
+                "role": "preprocessing",
+                "algorithm": "PCA",
+                "featureVariables": [
+                    "SS_batteryVoltage",
+                    "SS_engineCoolantTemperature",
+                    "SS_engineSpeed",
+                    "SS_lateralGForce",
+                    "SS_longitudeGForce",
+                    "SS_speed",
+                    "SS_verticalGForce"
+                ],
+                "algorithmParams": {
+                    "k": 3
+                }
+            },
+            {
+                "type": "fit",
+                "algorithm": "Birch",
+                "featureVariables": [
+                    "PC_1",
+                    "PC_2",
+                    "PC_3"
+                ],
+                "algorithmParams": {
+                    "k": 6
+                },
+                "modelName": "example_vehicles"
+            }
+        ]
+    },
+    "PowerPlant": {
+        "title": "Cluster Power Plant Operating Regimes",
+        "type": "cluster_numeric_events",
+        "dataSource": {
+            "searchString": "| inputlookup power_plant.csv | sample 1000",
+            "type": "SPL",
+            "earliestTime": "",
+            "latestTime": ""
+        },
+        "searchStages": [
+            {
+                "type": "fit",
+                "algorithm": "Birch",
+                "featureVariables": [
+                    "Energy_Output",
+                    "Humidity",
+                    "Pressure",
+                    "Temperature",
+                    "Vacuum"
+                ],
+                "algorithmParams": {
+                    "k": 4
+                },
+                "modelName": "example_powerplant"
+            }
+        ]
+    }
+}

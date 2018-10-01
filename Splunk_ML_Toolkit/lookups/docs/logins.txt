@@ -1,0 +1,29 @@
+1. Objective:
+  We want to forecast the number of logins by hour and identify when the actual number of logins differs significantly from our forecast.
+
+2. License: Free to use, collected by Splunk.
+
+3. Data Source:
+  Okta login counts from an anonymous company.
+
+4. Data Set Information:
+  The dataset contains about four weeks of login counts by hour, culminating in Thanksgiving week.
+
+5. Field Meanings:
+  A. _time: UNIX epoch time
+  B. logins: the number of logins seen during that hour
+  C. residual (created during the detect numeric outliers example): the difference between the predicted and actual values
+
+6. Parameter Selection:
+  A. Dashboard: Forecast Time Series
+      Settings:
+    1) Method: LLP
+    2) Withhold: 114
+    3) Forecast: 36
+  B. Dashboard: Detect Numeric Outliers
+      Settings:
+    1) Search: | inputlookup logins.csv | predict logins as prediction algorithm=LLP future_timespan=150 holdback=0 | eval residual = prediction - logins
+    2) Field to analyze: residual
+    3) Method: median absolute deviation
+    4) Multiplier: 9
+    5) Sliding window: 72

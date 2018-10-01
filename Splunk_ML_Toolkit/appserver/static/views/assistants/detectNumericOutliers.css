@@ -1,0 +1,34 @@
+#singleOutliersPanel .mlts-panel-body, #singleResultsPanel .mlts-panel-body {
+    height: 115px;
+}
+
+#windowSizeControl {
+    display: inline-block;
+}
+
+#currentPointCheckboxControl {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5px;
+}
+
+#outliersPanelMessage {
+    display: none;
+    text-align: center;
+}
+
+.panel-footer {
+    display: none;
+}
+
+#splitOutliersCheckboxControl {
+    display: inline-block;
+}
+
+#outliersTablePanel thead th:nth-child(1), #outliersTablePanel thead th:nth-child(2), #outliersTablePanel thead th:nth-child(3), #outliersTablePanel thead th:nth-child(4) {
+    font-weight: bold;
+}
+
+#outliersTablePanel thead th:nth-child(4):not(:last-child), #outliersTablePanel tbody td:nth-child(4):not(:last-child) {
+    border-right: 1px solid #000;
+}

@@ -1,0 +1,31 @@
+/*  Experiment Alerts
+ *  ====================
+ *  Alert listing page layout and overrides:
+ *
+ *  This page also has css that will be loaded from
+ *  views/shared/alerts/Master.pcss
+ *  which is what necessitates the usage of
+ *  !important in some scenarios.
+ */
+
+td.alert-actions span {
+  display: flex;
+  flex-direction: column;
+
+  /* IE 11 */
+  display: -ms-flexbox;
+  -ms-flex-direction: column;
+}
+
+.main-section-body > .alerts.shared-flashmessages {
+  padding: 20px;
+}
+
+td.alert-trigger span {
+  overflow-wrap: break-word;
+}
+
+.shared-alertcontrols-editmenu {
+  margin-left: 0px !important;
+}
+

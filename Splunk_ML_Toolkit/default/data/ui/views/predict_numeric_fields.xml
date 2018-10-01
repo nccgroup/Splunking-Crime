@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<view template="Splunk_ML_Toolkit:/templates/base.html" type="html">
+  <label>Predict Numeric Fields</label>
+</view>

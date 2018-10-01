@@ -1,0 +1,224 @@
+{
+  "schemaVersion": "1.0",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "predict_numeric_fields",
+        "predict_categorical_fields",
+        "detect_numeric_outliers",
+        "detect_categorical_outliers",
+        "forecast_time_series",
+        "cluster_numeric_events"
+      ]
+    },
+    "hasSchedule": {
+      "type": "string",
+      "pattern": "^[0|1]$"
+    },
+    "hasAlerts": {
+      "type": "string",
+      "pattern": "^[0|1]$"
+    },
+    "hasEnabledAlerts": {
+        "type": "string",
+        "pattern": "^[0|1]$"
+    },
+    "alertIds": {
+      "type": "array"
+    },
+    "description": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "dataSource": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["SPL"]
+        },
+        "searchString": {
+          "type": "string"
+        },
+        "earliestTime": {
+          "type": "string"
+        },
+        "latestTime": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": ["type", "searchString", "earliestTime", "latestTime"]
+    },
+    "searchStages": {
+      "type": "array",
+      "items": {
+        "anyOf": [
+          { "$ref": "#/definitions/search_stage_fit" },
+          { "$ref": "#/definitions/search_stage_predict" },
+          { "$ref": "#/definitions/search_stage_anomalydetection" },
+          { "$ref": "#/definitions/search_stage_outlierdetection" }
+        ]
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": ["title", "type"],
+  "definitions": {
+    "search_stage_fit": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["fit"]
+        },
+        "role": {
+          "type": "string",
+          "enum": ["main", "preprocessing"]
+        },
+        "algorithm": {
+          "type": "string",
+          "minLength": 1
+        },
+        "algorithmParams": {
+          "type": "object",
+          "additionalProperties": { "type": ["string", "boolean", "number"] }
+        },
+        "targetVariable": {
+          "type": "string",
+          "minLength": 1
+        },
+        "featureVariables": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "modelName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "trainingFraction": {
+          "type": "integer",
+          "minimum": 10,
+          "maximum": 100,
+          "multipleOf": 10
+        }
+      },
+      "additionalProperties": false,
+      "required": ["type", "role", "algorithm", "algorithmParams", "featureVariables"]
+    },
+    "search_stage_predict": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["predict"]
+        },
+        "role": {
+          "type": "string",
+          "enum": ["main"]
+        },
+        "params": {
+          "type": "object",
+          "additionalProperties": { "type": ["string", "boolean", "number"] }
+        },
+        "fields": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": ["type", "role", "params", "fields"]
+    },
+    "search_stage_anomalydetection": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["anomalydetection"]
+        },
+        "role": {
+          "type": "string",
+          "enum": ["main"]
+        },
+        "params": {
+          "type": "object",
+          "additionalProperties": { "type": ["string", "boolean", "number"] }
+        },
+        "fields": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": ["type", "role", "params", "fields"]
+    },
+    "search_stage_outlierdetection": {
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["outlierdetection"]
+        },
+        "role": {
+          "type": "string",
+          "enum": ["main"]
+        },
+        "outlierFields": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 1,
+          "description": "The outlier variables. Currently allows for at most 1, but may be expanded to support more in the future.",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "thresholdMethod": {
+          "type": "string",
+          "minLength": 1
+        },
+        "thresholdMultiplier": {
+          "type": "number",
+          "minimum": 1
+        },
+        "windowSize": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "The size (in points) of the sliding window. If omitted, don't use a sliding window."
+        },
+        "useCurrentPoint": {
+          "type": "boolean"
+        },
+        "splitByFields": {
+          "type": "array",
+          "minItems": 0,
+          "maxItems": 5,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": ["type", "role", "outlierFields", "thresholdMethod", "thresholdMultiplier", "useCurrentPoint", "splitByFields"]
+    }
+  }
+}

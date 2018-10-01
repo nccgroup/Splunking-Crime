@@ -1,0 +1,175 @@
+[app/install/install_source_checksum]
+version = 7.1.2
+modtime = 1535218335.365045000
+
+[app/install/is_configured]
+version = 7.1.2
+modtime = 1535218337.009634000
+
+[collections/showcase_linear_regression_history]
+access = read : [ * ], write : [ * ]
+export = system
+owner = nobody
+version = 7.1.2
+modtime = 1535727006.718290000
+
+[macros/regressionstatistics%282%29]
+access = read : [ * ], write : [ * ]
+export = system
+owner = nobody
+version = 7.1.2
+modtime = 1535727038.171007000
+
+[macros/histogram%282%29]
+access = read : [ * ], write : [ * ]
+export = system
+owner = nobody
+version = 7.1.2
+modtime = 1535727055.461523000
+
+[lookups/__mlspl_predict_total_crime_per_lsoa.csv]
+access = read : [ * ], write : [ * ]
+export = system
+owner = admin
+version = 7.1.2
+modtime = 1535727082.569258000
+
+[lookups/__mlspl_predict_total_crime_per_lsoa_decisiontreeregressor.csv]
+access = read : [ * ], write : [ * ]
+export = system
+owner = admin
+version = 7.1.2
+modtime = 1536095717.967209000
+
+[lookups/__mlspl_predict_total_crime_per_lsoa_decisiontreeregressor_FieldSelector_0.csv]
+access = read : [ * ], write : [ * ]
+export = system
+owner = admin
+version = 7.1.2
+modtime = 1536095721.884094000
+
+[lookups/__mlspl_predict_total_crime_per_lsoa_decisiontreeregressor_ridge.csv]
+access = read : [ * ], write : [ * ]
+export = system
+owner = admin
+version = 7.1.2
+modtime = 1536095725.368170000
+
+[lookups/__mlspl_predict_total_crime_per_lsoa_decisiontreeregressor_ridge_FieldSelector_0.csv]
+access = read : [ * ], write : [ * ]
+export = system
+owner = admin
+version = 7.1.2
+modtime = 1536095728.890744000
+
+[lookups/__mlspl_predict_total_crime_per_lsoa_kernelridge.csv]
+access = read : [ * ], write : [ * ]
+export = system
+owner = admin
+version = 7.1.2
+modtime = 1536095732.893733000
+
+[lookups/__mlspl_predict_total_crime_per_lsoa_kernelridge_FieldSelector_0.csv]
+access = read : [ * ], write : [ * ]
+export = system
+owner = admin
+version = 7.1.2
+modtime = 1536095736.818251000
+
+[lookups/__mlspl_predict_total_crime_per_lsoa_lasso.csv]
+access = read : [ * ], write : [ * ]
+export = system
+owner = admin
+version = 7.1.2
+modtime = 1536095741.125042000
+
+[lookups/__mlspl_predict_total_crime_per_lsoa_lasso_FieldSelector_0.csv]
+access = read : [ * ], write : [ * ]
+export = system
+owner = admin
+version = 7.1.2
+modtime = 1536095745.824365000
+
+[lookups/__mlspl_predict_total_crime_per_lsoa_randomforestregressor.csv]
+access = read : [ * ], write : [ * ]
+export = system
+owner = admin
+version = 7.1.2
+modtime = 1536095750.840174000
+
+[lookups/__mlspl_predict_total_crime_per_lsoa_randomforestregressor_FieldSelector_0.csv]
+access = read : [ * ], write : [ * ]
+export = system
+owner = admin
+version = 7.1.2
+modtime = 1536095755.657689000
+
+[lookups/__mlspl_example_total_number_of_crime_FieldSelector_0.csv]
+access = read : [ * ], write : [ * ]
+export = system
+owner = admin
+version = 7.1.2
+modtime = 1536156946.016432000
+
+[lookups/__mlspl_example_total_number_of_crime.csv]
+access = read : [ * ], write : [ * ]
+export = system
+owner = admin
+version = 7.1.2
+modtime = 1536156951.398844000
+
+[lookups/__mlspl_example_total_crime_predict_numerical_FieldSelector_0.csv]
+access = read : [ * ], write : [ * ]
+export = system
+owner = admin
+version = 7.1.2
+modtime = 1536156959.232578000
+
+[lookups/__mlspl_predict_total_crime_per_lsoa_ridge.csv]
+access = read : [ * ], write : [ * ]
+export = system
+owner = admin
+version = 7.1.2
+modtime = 1536157457.543161000
+
+[lookups/__mlspl_predict_total_crime_per_lsoa_ridge_FieldSelector_0.csv]
+access = read : [ * ], write : [ * ]
+export = system
+owner = admin
+version = 7.1.2
+modtime = 1536157478.944960000
+
+[lookups/__mlspl_predict_total_crime_per_lsoa_linear_regression.csv]
+access = read : [ * ], write : [ * ]
+export = system
+owner = admin
+version = 7.1.2
+modtime = 1536158528.845071000
+
+[lookups/__mlspl_predict_total_crime_per_lsoa_linear_regression_FieldSelector_0.csv]
+access = read : [ * ], write : [ * ]
+export = system
+owner = admin
+version = 7.1.2
+modtime = 1536158533.167963000
+
+[lookups/__mlspl_example_total_crime_predict_numerical.csv]
+access = read : [ * ], write : [ * ]
+export = system
+owner = admin
+version = 7.1.2
+modtime = 1536160127.293937000
+
+[lookups/__mlspl_example_server_power.csv]
+access = read : [ * ], write : [ * ]
+export = system
+owner = admin
+version = 7.1.2
+modtime = 1536160132.133679000
+
+[lookups/__mlspl_example_hard_drives_StandardScaler_0.csv]
+access = read : [ * ], write : [ * ]
+export = system
+owner = admin
+version = 7.1.2
+modtime = 1536160136.126395000

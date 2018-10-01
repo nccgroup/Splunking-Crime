@@ -1,0 +1,55 @@
+# Application-level permissions
+[]
+access = read : [ * ], write : [ admin, power ]
+
+### VIEWSTATES: even normal users should be able to create shared viewstates
+
+[viewstates]
+access = read : [ * ], write : [ * ]
+export = system
+
+[commands]
+export = system
+
+[visualizations]
+export = system
+
+[searchbnf]
+export = system
+
+[algos]
+access = read : [ * ], write : [ admin ]
+export = system
+
+[mlspl]
+access = read : [ * ], write : [ admin ]
+export = system
+
+[distsearch]
+access = read : [ * ], write : [ admin ]
+export = system
+
+[collections/last_installed_version]
+access = read : [ * ], write : [ * ]
+
+[collections/showcase_forecast_history]
+access = read : [ * ], write : [ * ]
+
+[collections/showcase_linear_regression_history]
+access = read : [ * ], write : [ * ]
+
+[collections/showcase_classification_history]
+access = read : [ * ], write : [ * ]
+
+[collections/showcase_outlier_detection_history]
+access = read : [ * ], write : [ * ]
+
+[collections/showcase_categorical_outlier_detection_history]
+access = read : [ * ], write : [ * ]
+
+[collections/showcase_clustering_history]
+access = read : [ * ], write : [ * ]
+
+[collections/experiment_history]
+access = read : [ admin ], write : [ admin ]
+

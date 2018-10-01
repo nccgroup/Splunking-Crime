@@ -1,0 +1,119 @@
+{
+    "Server Power": {
+        "title": "Predict Server Power Consumption",
+        "type": "predict_numeric_fields",
+        "dataSource": {
+            "searchString": "| inputlookup server_power.csv",
+            "type": "SPL",
+            "earliestTime": "",
+            "latestTime": ""
+        },
+        "searchStages": [
+            {
+                "type": "fit",
+                "algorithm": "LinearRegression",
+                "targetVariable": "ac_power",
+                "featureVariables": [
+                    "total-unhalted_core_cycles",
+                    "total-instructions_retired",
+                    "total-last_level_cache_references",
+                    "total-memory_bus_transactions",
+                    "total-cpu-utilization",
+                    "total-disk-accesses",
+                    "total-disk-blocks",
+                    "total-disk-utilization"
+                ],
+                "algorithmParams": {
+                    "fit_intercept": true
+                },
+                "modelName": "example_server_power"
+            }
+        ]
+    },
+    "Housing": {
+        "title": "Predict Median House Value",
+        "type": "predict_numeric_fields",
+        "dataSource": {
+            "searchString": "| inputlookup housing.csv",
+            "type": "SPL",
+            "earliestTime": "",
+            "latestTime": ""
+        },
+        "searchStages": [
+            {
+                "type": "fit",
+                "algorithm": "LinearRegression",
+                "targetVariable": "median_house_value",
+                "featureVariables": [
+                    "crime_rate",
+                    "land_zone",
+                    "nitric_oxide_concentration",
+                    "avg_rooms_per_dwelling",
+                    "units_prior_1940",
+                    "distance_to_employment_center",
+                    "highway_accessibility_index",
+                    "property_tax_rate",
+                    "pupil_teacher_ratio"
+                ],
+                "algorithmParams": {
+                    "fit_intercept": true
+                },
+                "modelName": "example_housing"
+            }
+        ]
+    },
+    "App Usage": {
+        "title": "Predict VPN Usage",
+        "type": "predict_numeric_fields",
+        "dataSource": {
+            "searchString": "| inputlookup app_usage.csv",
+            "type": "SPL",
+            "earliestTime": "",
+            "latestTime": ""
+        },
+        "searchStages": [
+            {
+                "type": "fit",
+                "algorithm": "LinearRegression",
+                "targetVariable": "RemoteAccess",
+                "featureVariables": [
+                    "CRM",
+                    "HR1",
+                    "Webmail",
+                    "CloudDrive"
+                ],
+                "algorithmParams": {
+                    "fit_intercept": true
+                },
+                "modelName": "example_app_usage"
+            }
+        ]
+    },
+    "Power Plant": {
+        "title": "Predict Power Plant Energy Output",
+        "type": "predict_numeric_fields",
+        "dataSource": {
+            "searchString": "| inputlookup power_plant.csv",
+            "type": "SPL",
+            "earliestTime": "",
+            "latestTime": ""
+        },
+        "searchStages": [
+            {
+                "type": "fit",
+                "algorithm": "LinearRegression",
+                "targetVariable": "Energy_Output",
+                "featureVariables": [
+                    "Temperature",
+                    "Pressure",
+                    "Humidity",
+                    "Vacuum"
+                ],
+                "algorithmParams": {
+                    "fit_intercept": true
+                },
+                "modelName": "example_energy_output"
+            }
+        ]
+    }
+}

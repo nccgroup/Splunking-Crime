@@ -1,0 +1,70 @@
+{
+    "links": {
+        "create": "/servicesNS/admin/Splunk_ML_Toolkit/configs/conf-experiments/_new",
+        "_reload": "/servicesNS/admin/Splunk_ML_Toolkit/configs/conf-experiments/_reload",
+        "_acl": "/servicesNS/admin/Splunk_ML_Toolkit/configs/conf-experiments/_acl"
+    },
+    "origin": "https://127.0.0.1:8089/servicesNS/admin/Splunk_ML_Toolkit/configs/conf-experiments",
+    "updated": "2018-02-12T14:27:19-08:00",
+    "generator": {
+        "build": "f403bc3c4b104dbbc25a52508049b56ba2e03fc2",
+        "version": "20180124"
+    },
+    "entry": [
+        {
+            "name": "cluster_numeric_events",
+            "id": "https://127.0.0.1:8089/servicesNS/admin/Splunk_ML_Toolkit/configs/conf-experiments/cluster_numeric_events",
+            "updated": "2018-02-12T10:16:56-08:00",
+            "links": {
+                "alternate": "/servicesNS/admin/Splunk_ML_Toolkit/configs/conf-experiments/cluster_numeric_events",
+                "list": "/servicesNS/admin/Splunk_ML_Toolkit/configs/conf-experiments/cluster_numeric_events",
+                "_reload": "/servicesNS/admin/Splunk_ML_Toolkit/configs/conf-experiments/cluster_numeric_events/_reload",
+                "edit": "/servicesNS/admin/Splunk_ML_Toolkit/configs/conf-experiments/cluster_numeric_events",
+                "remove": "/servicesNS/admin/Splunk_ML_Toolkit/configs/conf-experiments/cluster_numeric_events",
+                "move": "/servicesNS/admin/Splunk_ML_Toolkit/configs/conf-experiments/cluster_numeric_events/move",
+                "disable": "/servicesNS/admin/Splunk_ML_Toolkit/configs/conf-experiments/cluster_numeric_events/disable"
+            },
+            "author": "admin",
+            "acl": {
+                "app": "Splunk_ML_Toolkit",
+                "can_change_perms": true,
+                "can_list": true,
+                "can_share_app": true,
+                "can_share_global": true,
+                "can_share_user": true,
+                "can_write": true,
+                "modifiable": true,
+                "owner": "admin",
+                "perms": null,
+                "removable": true,
+                "sharing": "user"
+            },
+            "fields": {
+                "required": [],
+                "optional": [],
+                "wildcard": [
+                    ".*"
+                ]
+            },
+            "content": {
+                "dataSource": "{\"type\":\"SPL\",\"searchString\":\"| inputlookup disk_failures.csv | search SMART_1_Raw=* | sample 1000\",\"earliestTime\":\"\",\"latestTime\":\"\"}",
+                "description": "",
+                "disabled": false,
+                "eai:acl": null,
+                "eai:appName": "Splunk_ML_Toolkit",
+                "eai:userName": "admin",
+                "notes": "",
+                "searchStages": "[{\"role\":\"preprocessing\",\"type\":\"fit\",\"algorithm\":\"PCA\",\"modelName\":\"example_hard_drives_PCA_0\",\"featureVariables\":[\"SMART_1_Raw\",\"SMART_2_Raw\",\"SMART_3_Raw\",\"SMART_4_Raw\",\"SMART_5_Raw\"],\"algorithmParams\":{\"k\":\"4\"}},{\"algorithm\":\"KMeans\",\"modelName\":\"example_hard_drives\",\"role\":\"main\",\"type\":\"fit\",\"featureVariables\":[\"PC_1\",\"PC_2\",\"PC_3\",\"PC_4\"],\"algorithmParams\":{\"k\":3}}]",
+                "title": "Cluster Numeric Events",
+                "type": "cluster_numeric_events",
+                "hasSchedule": true
+            }
+        }
+    ],
+    "paging": {
+        "total": 1,
+        "perPage": 30,
+        "offset": 0
+    },
+    "messages": []
+}

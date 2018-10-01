@@ -1,0 +1,46 @@
+/*
+ fix auto-resizing
+ */
+.highcharts-container, .highcharts-container svg { width: 100% !important; }
+
+.mlts-scatterplotmatrix-table {
+    display: table;
+}
+.mlts-scatterplotmatrix-table-row {
+    display: table-row;
+}
+
+.mlts-scatterplotmatrix-table-cell {
+    display: table-cell;
+}
+
+.mlts-scatterplotmatrix-table-cell-subtable {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.mlts-scatterplotmatrix-legend {
+    display: table-cell;
+    vertical-align: middle;
+    width: 220px;
+    max-width: 220px;
+}
+.mlts-scatterplotmatrix-legend-text {
+    color: #000000;
+    font-weight: bold;
+}
+
+.mlts-scatterplotmatrix-legend-wrapper {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.mlts-scatterplotmatrix-legend-icon {
+    vertical-align: middle;
+    font-size: 30px;
+}
+
+.mlts-scatterplotmatrix-warning-message {
+    text-align: center;
+}

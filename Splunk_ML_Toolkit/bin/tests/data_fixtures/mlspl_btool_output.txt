@@ -1,0 +1,280 @@
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf [ARIMA]
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf handle_new_cat = default
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values_for_classifiers = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_fit_time = 600
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_inputs = 100000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_memory_usage_mb = 1000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_model_size_mb = 15
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf streaming_apply = false
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf use_sampling = false
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf [Birch]
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf handle_new_cat = default
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values_for_classifiers = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_fit_time = 600
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_inputs = 2000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_memory_usage_mb = 1000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_model_size_mb = 15
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf streaming_apply = false
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf use_sampling = true
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf [DecisionTreeClassifier]
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf handle_new_cat = default
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values_for_classifiers = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_fit_time = 600
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_inputs = 100000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_memory_usage_mb = 1000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_model_size_mb = 15
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf streaming_apply = false
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf summary_depth_limit = 5
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf summary_return_json = false
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf use_sampling = true
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf [DecisionTreeRegressor]
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf handle_new_cat = default
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values_for_classifiers = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_fit_time = 600
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_inputs = 100000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_memory_usage_mb = 1000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_model_size_mb = 15
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf streaming_apply = false
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf summary_depth_limit = 5
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf summary_return_json = false
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf use_sampling = true
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf [KernelPCA]
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf handle_new_cat = default
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values_for_classifiers = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_fit_time = 600
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_inputs = 5000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_memory_usage_mb = 1000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_model_size_mb = 15
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf streaming_apply = false
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf use_sampling = true
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf [KernelRidge]
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf handle_new_cat = default
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values_for_classifiers = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_fit_time = 600
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_inputs = 5000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_memory_usage_mb = 1000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_model_size_mb = 15
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf streaming_apply = false
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf use_sampling = true
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf [OneClassSVM]
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf handle_new_cat = default
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values_for_classifiers = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_fit_time = 600
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_inputs = 10000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_memory_usage_mb = 1000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_model_size_mb = 15
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf streaming_apply = false
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf use_sampling = true
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf [SVM]
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf handle_new_cat = default
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values_for_classifiers = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_fit_time = 600
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_inputs = 10000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_memory_usage_mb = 1000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_model_size_mb = 15
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf streaming_apply = false
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf use_sampling = true
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf [SpectralClustering]
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf handle_new_cat = default
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values_for_classifiers = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_fit_time = 1800
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_inputs = 2000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_memory_usage_mb = 1000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_model_size_mb = 15
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf streaming_apply = false
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf use_sampling = true
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf [TFIDF]
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf handle_new_cat = default
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values_for_classifiers = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_fit_time = 600
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_inputs = 200000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_memory_usage_mb = 1000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_model_size_mb = 15
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf streaming_apply = false
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf use_sampling = true
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf [default]
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf handle_new_cat = default
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values_for_classifiers = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_fit_time = 600
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_inputs = 100000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_memory_usage_mb = 1000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_model_size_mb = 15
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf streaming_apply = false
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf use_sampling = true
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf [ARIMA]
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf handle_new_cat = default
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values_for_classifiers = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_fit_time = 600
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_inputs = 100000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_memory_usage_mb = 1000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_model_size_mb = 15
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf streaming_apply = false
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf use_sampling = false
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf [Birch]
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf handle_new_cat = default
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values_for_classifiers = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_fit_time = 600
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_inputs = 2000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_memory_usage_mb = 1000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_model_size_mb = 15
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf streaming_apply = false
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf use_sampling = true
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf [DecisionTreeClassifier]
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf handle_new_cat = default
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values_for_classifiers = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_fit_time = 600
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_inputs = 100000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_memory_usage_mb = 1000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_model_size_mb = 15
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf streaming_apply = false
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf summary_depth_limit = 5
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf summary_return_json = false
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf use_sampling = true
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf [DecisionTreeRegressor]
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf handle_new_cat = default
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values_for_classifiers = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_fit_time = 600
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_inputs = 100000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_memory_usage_mb = 1000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_model_size_mb = 15
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf streaming_apply = false
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf summary_depth_limit = 5
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf summary_return_json = false
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf use_sampling = true
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf [KernelPCA]
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf handle_new_cat = default
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values_for_classifiers = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_fit_time = 600
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_inputs = 5000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_memory_usage_mb = 1000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_model_size_mb = 15
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf streaming_apply = false
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf use_sampling = true
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf [KernelRidge]
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf handle_new_cat = default
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values_for_classifiers = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_fit_time = 600
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_inputs = 5000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_memory_usage_mb = 1000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_model_size_mb = 15
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf streaming_apply = false
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf use_sampling = true
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf [OneClassSVM]
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf handle_new_cat = default
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values_for_classifiers = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_fit_time = 600
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_inputs = 10000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_memory_usage_mb = 1000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_model_size_mb = 15
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf streaming_apply = false
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf use_sampling = true
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf [SVM]
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf handle_new_cat = default
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values_for_classifiers = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_fit_time = 600
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_inputs = 10000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_memory_usage_mb = 1000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_model_size_mb = 15
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf streaming_apply = false
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf use_sampling = true
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf [SpectralClustering]
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf handle_new_cat = default
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values_for_classifiers = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_fit_time = 1800
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_inputs = 2000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_memory_usage_mb = 1000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_model_size_mb = 15
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf streaming_apply = false
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf use_sampling = true
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf [TFIDF]
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf handle_new_cat = default
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values_for_classifiers = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_fit_time = 600
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_inputs = 200000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_memory_usage_mb = 1000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_model_size_mb = 15
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf streaming_apply = false
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf use_sampling = true
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf [default]
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf handle_new_cat = default
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values_for_classifiers = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_fit_time = 600
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_inputs = 100000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_memory_usage_mb = 1000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_model_size_mb = 15
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf streaming_apply = false
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf use_sampling = true
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf [score:pairwise]
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf handle_new_cat = default
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values_for_classifiers = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_fit_time = 600
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_inputs = 1000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_memory_usage_mb = 1000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_model_size_mb = 15
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf streaming_apply = false
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf use_sampling = true
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf [score:classification]
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf handle_new_cat = default
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values_for_classifiers = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_fit_time = 600
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_inputs = 100000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_memory_usage_mb = 1000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_model_size_mb = 15
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf streaming_apply = false
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf use_sampling = true
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf [score:regression]
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf handle_new_cat = default
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values_for_classifiers = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_fit_time = 600
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_inputs = 100000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_memory_usage_mb = 1000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_model_size_mb = 15
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf streaming_apply = false
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf use_sampling = true
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf [score:statstest]
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf handle_new_cat = default
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values_for_classifiers = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_fit_time = 600
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_inputs = 100000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_memory_usage_mb = 1000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_model_size_mb = 15
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf streaming_apply = false
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf use_sampling = true
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf [score:clustering]
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf handle_new_cat = default
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_distinct_cat_values_for_classifiers = 100
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_fit_time = 600
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_inputs = 100000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_memory_usage_mb = 1000
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf max_model_size_mb = 15
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf streaming_apply = false
+/opt/splunk/etc/apps/Splunk_ML_Toolkit/default/mlspl.conf use_sampling = true

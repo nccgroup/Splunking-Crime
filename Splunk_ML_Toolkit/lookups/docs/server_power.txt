@@ -1,0 +1,14 @@
+1. Objective: We want to predict the power utilization of a machine based on other machine metrics such as CPU utilization and memory transactions.
+
+2. License: Free to use, with citation request.
+
+3. Data Source: One of the authors of the following paper (which discusses the dataset) provided us with the data: https://www.usenix.org/legacy/event/hotpower08/tech/full_papers/rivoire/rivoire.pdf
+
+4. Field Meanings: The field names are self-explanatory.
+
+5. Parameter Selection:
+  A. Dashboard Usage: Predict Numeric Fields
+  Settings:
+     1)Search command: | inputlookup server_power.csv
+     2)Field to predict: ac_power
+     3)Fields to use for predicting: total-unhalted_core_cycles, total-instructions_retired, total-last_level_cache_references, total-memory_bus_transactions, total-cpu-utilization, total-disk-accesses, total-disk-blocks, total-disk-utilization

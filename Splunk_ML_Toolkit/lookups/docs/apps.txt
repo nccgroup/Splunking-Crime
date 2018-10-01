@@ -1,0 +1,32 @@
+1. Objective:
+  We want to predict the VPN usage of employees based on the frequency of use of other apps.
+
+2. License: Free to use, collected by Splunk.
+
+3. Data Source:
+  Corporate app usage from an anonymous company.
+
+4. Data Set Information:
+  The dataset covers just under three months of aggregate app usage.
+
+5. Field Meanings:
+  A. _time: UNIX epoch time
+  B. The remaining fields (app names anonymized) contain the number of logins during that day.
+
+6. Parameter Selection:
+  A. Dashboard: Predict Numeric Fields
+      Settings:
+    1) Search: | inputlookup app_usage.csv
+    2) Field to Predict: RemoteAccess
+    3) Fields to Use: CRM, CloudDrive, HR1, Webmail
+
+  B. Dashboard: Cluster Numeric Fields
+        Settings:
+    0) Search: | inputlookup app_usage.csv
+    1) Model name: N/A
+    2) Fields to preprocess: CRM, CloudDrive, ERP, Expenses, HR1, HR2, ITOps, OTHER, Recruiting, RemoteAccess, Webmail
+    3) Apply StandardScaler
+    4) Apply PCA to reduce to 3 fields
+    5) Algorithm: Spectral Clustering
+    6) Fields to use: PC_1, PC_2, PC_3
+    7) K: 3

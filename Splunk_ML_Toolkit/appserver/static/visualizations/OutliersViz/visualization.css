@@ -1,0 +1,99 @@
+.mltk-outliers-viz-controls {
+    display: none;
+    padding: 0 10px 20px 10px;
+}
+
+.mltk-outliers-viz-controls label:first-child {
+    margin-bottom: 5px;
+}
+
+.mltk-outliers-viz-controls-inner {
+    display: table;
+}
+
+.mltk-outliers-viz-controls-inner .chosen-container {
+    display: table-cell;
+}
+
+.mltk-outliers-viz-controls-buttons {
+    display: table-cell;
+    white-space: nowrap;
+}
+
+.mltk-outliers-viz-controls-buttons > .btn {
+    margin-left: 5px;
+}
+
+/* override the default Chosen styling to make it look closer to Splunk multidropdown styling */
+.mltk-outliers-viz-controls .chosen-container {
+    font-size: 12px;
+}
+
+.mltk-outliers-viz-controls .chosen-container-multi .chosen-choices {
+    border-radius: 4px;
+    padding: 0 1px;
+}
+
+.mltk-outliers-viz-controls .chosen-container-multi .chosen-choices li.search-choice {
+    line-height: 13px;
+    padding: 3px 5px 3px 18px;
+    margin: 2px;
+}
+
+.mltk-outliers-viz-controls .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+    left: 3px;
+}
+
+.mltk-outliers-viz-controls .chosen-container .chosen-results li {
+    color: #1e93c6;
+}
+
+.mltk-outliers-viz-controls .chosen-container .chosen-results li.highlighted {
+    color: #3863a0;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.mltk-outliers-viz-controls .chosen-container-multi .chosen-choices li.search-field input[type=text] {
+    height: 23px;
+    color: #666666 !important;
+    width: 10px;
+    padding: 5px;
+}
+
+.mltk-outliers-plot {
+    position: relative;
+}
+
+.mltk-outliers-plot-count-wrapper {
+    width: 70px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    height: 100%;
+    display: table;
+}
+
+.mltk-outliers-plot-count-wrapper.hidden {
+    display: none;
+}
+
+.mltk-outliers-plot-count-wrapper > div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.mltk-outliers-plot-count {
+    font-size: 26px;
+    line-height: 26px;
+}
+
+.mltk-outliers-plot-chart {
+    height: 100%;
+}
+
+.mltk-outliers-viz-message {
+    display: none;
+    text-align: center;
+}

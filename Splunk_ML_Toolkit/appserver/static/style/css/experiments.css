@@ -1,0 +1,136 @@
+.mltk-experiments-type-selector {
+    display: none;
+    padding-top: 10px;
+}
+
+.mltk-experiments-type-selector h2 {
+    text-align: center;
+    padding-top: 30px;
+    font-weight: 200;
+}
+
+th.col-scheduled-training {
+    width: 15px;
+    text-align: center;
+}
+
+th.col-alert {
+    width: 15px;
+    text-align: center;
+}
+
+
+/* Experiment Type Filter */
+.mltk-experiments-type-filter {
+    margin: 0;
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+}
+
+.mltk-experiments-type-filter > li {
+    padding: 5px;
+    display: table-cell;
+}
+
+.mltk-experiments-type-filter .mltk-experiment-type-card {
+    height: 90px;
+    vertical-align: top;
+    background: white;
+    padding: 5px;
+    border: 2px solid;
+    border-color: white;
+    position: relative;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mltk-experiments-type-filter .mltk-experiment-type-card:first-child {
+    margin-left: 0;
+}
+
+.mltk-experiments-type-filter .mltk-experiment-type-card:last-child {
+    margin-right: 0;
+}
+
+.mltk-experiments-type-filter .mltk-experiment-type-card:hover {
+    border-color: #1e93c6;
+    cursor: pointer;
+}
+
+.mltk-experiments-type-filter .mltk-experiment-type-card.active {
+    border-color: #1e93c6;
+}
+
+.mltk-experiments-type-filter .mltk-experiment-type-title {
+    font-size: 14px;
+}
+
+.mltk-experiments-type-filter .mltk-experiment-type-info {
+    font-size: 34px;
+    line-height: normal;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+}
+
+.mltk-experiments-type-filter .mltk-experiment-type-card .icon {
+    color: #cccccc;
+    fill: #cccccc;
+}
+
+.mltk-experiments-type-filter .mltk-experiment-type-card.active .icon {
+    color: #1e93c6;
+    fill: #1e93c6;
+}
+
+.mltk-experiments-type-filter .mltk-experiment-type-card:hover .icon {
+    color: #1e93c6;
+    fill: #1e93c6;
+}
+
+/* experiment list table */
+
+.mltk-experiment-details {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.mltk-experiment-details > * {
+    display: table-cell;
+    width: 50%;
+}
+
+/* experiment and model list table */
+
+.more-info > td.details {
+    word-wrap: break-word;
+}
+
+.table th.col-actions {
+  width: 20%;
+}
+
+.table th.col-algorithm{
+  width: 30%;
+}
+
+td.has-scheduled-training {
+  color: #bfbfbf;
+  text-align: center;
+}
+
+td.icon-cell {
+  color: #bfbfbf;
+  text-align: center;
+}
+
+.active-icon {
+  color: #1e93c6;
+}
+
+#categoricalOutliersAlertModalProbableCauseCheckbox {
+    margin-bottom: 20px;
+}

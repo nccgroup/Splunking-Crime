@@ -1,0 +1,28 @@
+1. Objective:
+  We want to predict whether patients suffer from diabetes based on other body metrics like age and blood pressure.
+
+2. License: Free to use with citation: Lichman, M. (2013). UCI Machine Learning Repository http://archive.ics.uci.edu/ml. Irvine, CA: University of California, School of Information and Computer Science.
+
+3. Data Source:
+  http://archive.ics.uci.edu/ml/machine-learning-databases/pima-indians-diabetes/
+
+4. Data Set Information:
+  The dataset contains 8 attributes (aside from the presence of diabetes) for 768 individuals. "Several constraints were placed on the selection of these instances from a larger database. In particular, all patients here are females at least 21 years old of Pima Indian heritage."
+
+5. Field Meanings (quoted verbatim from the source above):
+   1. number_pregnant: Number of times pregnant
+   2. glucose_concentration: Plasma glucose concentration a 2 hours in an oral glucose tolerance test
+   3. blood_pressure: Diastolic blood pressure (mm Hg)
+   4. skin_thickness: Triceps skin fold thickness (mm)
+   5. serum_insulin: 2-Hour serum insulin (mu U/ml)
+   6. BMI: Body mass index (weight in kg/(height in m)^2)
+   7. diabetes_pedigree: Diabetes pedigree function
+   8. age: Age (years)
+   9. response: Class variable (0 for no diabetes or 1 for diabetes)
+
+6. Parameter Selection:
+  A. Dashboard: Predict Categorical Fields
+      Settings:
+    1) Search: | inputlookup diabetes.csv
+    2) Field to predict: response
+    3) Fields to use: BMI, age, blood_pressure, diabetes_pedigree, glucose_concentration, number_pregnant

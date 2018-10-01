@@ -1,0 +1,135 @@
+{
+    "Disk Failures": {
+        "title": "Detect Outliers in Disk Failures",
+        "type": "detect_categorical_outliers",
+        "dataSource": {
+            "searchString": "| inputlookup disk_failures.csv",
+            "type": "SPL",
+            "earliestTime": "",
+            "latestTime": ""
+        },
+        "searchStages": [
+            {
+                "type": "anomalydetection",
+                "fields": [
+                    "Model",
+                    "CapacityBytes",
+                    "DiskFailure",
+                    "SerialNumber"
+                ]
+            }
+        ]
+    },
+    "Bitcoin Transactions": {
+        "title": "Detect Outliers in Bitcoin Transactions",
+        "type": "detect_categorical_outliers",
+        "dataSource": {
+            "searchString": "| inputlookup bitcoin_transactions.csv | eval from_user = \"u\".user_id_from | eval to_user = \"u\".user_id_to",
+            "type": "SPL",
+            "earliestTime": "",
+            "latestTime": ""
+        },
+        "searchStages": [
+            {
+                "type": "anomalydetection",
+                "fields": [
+                    "from_user",
+                    "to_user",
+                    "value"
+                ]
+            }
+        ]
+    },
+    "Mortgage Loans Data - New York": {
+        "title": "Detect Outliers in Mortgage Contracts",
+        "type": "detect_categorical_outliers",
+        "dataSource": {
+            "searchString": "| inputlookup mortgage_loan_ny.csv",
+            "type": "SPL",
+            "earliestTime": "",
+            "latestTime": ""
+        },
+        "searchStages": [
+            {
+                "type": "anomalydetection",
+                "fields": [
+                    "Year",
+                    "Contract_interest_rate(%)",
+                    "Initial_fees_and_charges(%)",
+                    "Effective_interest_rate(%)",
+                    "Term_to_maturity",
+                    "Purchase_price",
+                    "Loan_to_price_ratio(%)",
+                    "Adjustable_rate_loans(%)"
+                ]
+            }
+        ]
+    },
+    "Diabetic Data": {
+        "title": "Detect Outliers in Diabetes Patient Records",
+        "type": "detect_categorical_outliers",
+        "dataSource": {
+            "searchString": "| inputlookup diabetic.csv | fields num_lab_procedures num_medications num_procedures number_diagnoses number_inpatient number_outpatient number_emergency",
+            "type": "SPL",
+            "earliestTime": "",
+            "latestTime": ""
+        },
+        "searchStages": [
+            {
+                "type": "anomalydetection",
+                "fields": [
+                    "num_lab_procedures",
+                    "num_medications",
+                    "num_procedures",
+                    "number_diagnoses",
+                    "number_inpatient",
+                    "number_outpatient",
+                    "number_emergency"
+                ]
+            }
+        ]
+    },
+    "Supermarket Purchases": {
+        "title": "Detect Outliers in Supermarket Purchases",
+        "type": "detect_categorical_outliers",
+        "dataSource": {
+            "searchString": "| inputlookup supermarket.csv",
+            "type": "SPL",
+            "earliestTime": "",
+            "latestTime": ""
+        },
+        "searchStages": [
+            {
+                "type": "anomalydetection",
+                "fields": [
+                    "customer_id",
+                    "shop_id",
+                    "product_id",
+                    "quantity",
+                    "price",
+                    "distance"
+                ]
+            }
+        ]
+    },
+    "Phone Usage": {
+        "title": "Detect Outliers in Mobile Phone Activity",
+        "type": "detect_categorical_outliers",
+        "dataSource": {
+            "searchString": "| inputlookup phone_usage.csv | eval _time=strptime(_time, \"%Y-%m-%d %H:%M:%S\") | where type=\"Voice\" | timechart count(\"duration\") span=12h by direction",
+            "type": "SPL",
+            "earliestTime": "",
+            "latestTime": ""
+        },
+        "searchStages": [
+            {
+                "type": "anomalydetection",
+                "fields": [
+                    "Incoming",
+                    "Missed call",
+                    "Outgoing"
+                ]
+            }
+        ]
+    }
+}

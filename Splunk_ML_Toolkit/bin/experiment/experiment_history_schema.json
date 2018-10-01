@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0",
+  "properties": {
+    "experimentId": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{8}[0-9a-f]{4}4[0-9a-f]{3}[89ab][0-9a-f]{3}[0-9a-f]{12}$"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "success",
+        "failure",
+        "unknown"
+      ]
+    },
+    "sid": {
+      "type": "string"
+    },
+    "dataSource": {
+      "$ref": "experiment_schema.json#properties/dataSource"
+    },
+    "searchStages": {
+      "$ref": "experiment_schema.json#properties/searchStages"
+    },
+    "description": {
+      "$ref": "experiment_schema.json#properties/description"
+    },
+    "notes": {
+      "$ref": "experiment_schema.json#properties/notes"
+    }
+  },
+  "additionalProperties": false,
+  "patternProperties": {
+    "^stats_": { "type": "number" }
+  },
+  "required": [
+    "experimentId",
+    "status",
+    "sid",
+    "dataSource",
+    "searchStages",
+    "description",
+    "notes"
+  ]
+}

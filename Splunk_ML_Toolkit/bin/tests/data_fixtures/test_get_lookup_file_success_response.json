@@ -1,0 +1,19 @@
+{
+  "error_type": null,
+  "success": true,
+  "content": "{\"links\":{\"create\":\"/servicesNS/admin/search/data/lookup-table-files/_new\",\"_reload\":\"/servicesNS/admin/search/data/lookup-table-files/_reload\",\"_acl\":\"/servicesNS/admin/search/data/lookup-table-files/_acl\"},\"origin\":\"https://127.0.0.1:8089/servicesNS/admin/search/data/lookup-table-files\",\"updated\":\"2018-06-29T16:55:35-07:00\",\"generator\":{\"build\":\"2e75b3406c5b\",\"version\":\"7.1.0\"},\"entry\":[{\"name\":\"__mlspl_aaa_StandardScaler_0.csv\",\"id\":\"https://127.0.0.1:8089/servicesNS/admin/search/data/lookup-table-files/__mlspl_aaa_StandardScaler_0.csv\",\"updated\":\"2018-06-29T16:55:35-07:00\",\"links\":{\"alternate\":\"/servicesNS/admin/search/data/lookup-table-files/__mlspl_aaa_StandardScaler_0.csv\",\"list\":\"/servicesNS/admin/search/data/lookup-table-files/__mlspl_aaa_StandardScaler_0.csv\",\"_reload\":\"/servicesNS/admin/search/data/lookup-table-files/__mlspl_aaa_StandardScaler_0.csv/_reload\",\"edit\":\"/servicesNS/admin/search/data/lookup-table-files/__mlspl_aaa_StandardScaler_0.csv\",\"remove\":\"/servicesNS/admin/search/data/lookup-table-files/__mlspl_aaa_StandardScaler_0.csv\",\"move\":\"/servicesNS/admin/search/data/lookup-table-files/__mlspl_aaa_StandardScaler_0.csv/move\"},\"author\":\"admin\",\"acl\":{\"app\":\"search\",\"can_change_perms\":true,\"can_list\":true,\"can_share_app\":true,\"can_share_global\":true,\"can_share_user\":true,\"can_write\":true,\"modifiable\":true,\"owner\":\"admin\",\"perms\":null,\"removable\":true,\"sharing\":\"user\"},\"content\":{\"disabled\":false,\"eai:acl\":null,\"eai:appName\":\"search\",\"eai:data\":\"/Users/admin/splunk/etc/users/admin/search/lookups/__mlspl_aaa_StandardScaler_0.csv\",\"eai:userName\":\"admin\"}}],\"paging\":{\"total\":1,\"perPage\":30,\"offset\":0},\"messages\":[]}",
+  "status": 200,
+  "response": {
+    "x-frame-options": "SAMEORIGIN",
+    "connection": "Close",
+    "server": "Splunkd",
+    "vary": "Authorization",
+    "x-content-type-options": "nosniff",
+    "expires": "Thu, 26 Oct 1978 00:00:00 GMT",
+    "content-length": "1666",
+    "status": "200",
+    "date": "Fri, 29 Jun 2018 23:55:35 GMT",
+    "content-type": "application/json; charset=UTF-8",
+    "cache-control": "no-store, no-cache, must-revalidate, max-age=0"
+  }
+}

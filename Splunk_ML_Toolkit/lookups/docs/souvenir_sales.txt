@@ -1,0 +1,27 @@
+1. Objective:
+  We want to forecast the number of souvenir sales by month.
+
+2. License:
+  Default open license.  This data release is licensed as follows:
+  You may copy and redistribute the data.
+  You may make derivative works from the data.
+  You may use the data for commercial purposes.
+  You may not sublicense the data when redistributing it.
+  You may not redistribute the data under a different license.
+  Source attribution on any use of this data: Must refer to source.
+
+3. Data Source: https://datamarket.com/data/set/22mh/monthly-sales-for-a-souvenir-shop-on-the-wharf-at-a-beach-resort-town-in-queensland-australia-jan-1987-dec-1993#!ds=22mh&display=line
+
+4. Data Set Information:
+  Monthly sales for a souvenir shop on the wharf at a beach resort town in Queensland, Australia, from Jan 1987--Dec 1993.
+
+5. Field Meanings:
+  A. Month: date in YYYY-MM-DD format
+  B. sales: monthly sales revenue for the souvenir shop
+
+6. Parameter Selection:
+  A. Dashboard: Forecast Time Series
+      Settings:
+    1) Method: LLP
+    2) Withhold: 0
+    3) Forecast: 24

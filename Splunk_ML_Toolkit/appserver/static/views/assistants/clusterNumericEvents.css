@@ -1,0 +1,21 @@
+#scatterPlotMatrixLegend > p {
+    margin: 0 0 5px 25px;
+    font-weight: bold;
+}
+
+.mlts-visualize-picker > * {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#visualizeSubmitControl > a {
+    margin-left: 5px;
+}
+
+#clusteringViz > div {
+    height: 100% !important;
+}
+
+#clusteringPanel > .mlts-panel-footer {
+    margin-top: 15px;
+}

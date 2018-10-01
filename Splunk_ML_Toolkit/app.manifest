@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "2.0.0",
+  "info": {
+    "title": "Splunk_ML_Toolkit",
+    "id": {
+      "group": null,
+      "name": "Splunk_ML_Toolkit",
+      "version": "3.4.0"
+    },
+    "author": [
+      {
+        "name": "Splunk",
+        "email": "mlsupport@splunk.com",
+        "company": null
+      }
+    ],
+    "releaseDate": null,
+    "description": "Splunk Machine Learning Toolkit",
+    "classification": {
+      "intendedAudience": null,
+      "categories": ["IoT & Industrial Data", " Utilities", " Business Analytics"],
+      "developmentStatus": null
+    },
+    "commonInformationModels": null,
+    "license": {
+      "name": "Splunk Software License Agreement",
+      "text": null,
+      "uri": "https://www.splunk.com/en_us/legal/splunk-software-license-agreement.html"
+    },
+    "privacyPolicy": {
+      "name": null,
+      "text": null,
+      "uri": null
+    },
+    "releaseNotes": {
+      "name": "Splunk Machine Learning Toolkit Release Notes",
+      "text": null,
+      "uri": "http://docs.splunk.com/Documentation/MLApp/latest/User/Whatsnew"
+    }
+  },
+  "dependencies": {
+      "Splunk_SA_Scientific_Python_linux_x86_64": {
+          "version": "1.3+",
+          "targetOS": ["_linux_x86_64"],
+          "optional": true
+      },
+      "Splunk_SA_Scientific_Python_windows_x86_64": {
+          "version": "1.3+",
+          "targetOS": ["_windows"],
+          "optional": true
+      },
+      "Splunk_SA_Scientific_Python_linux_x86": {
+          "version": "1.3+",
+          "targetOS": ["_linux_x86"],
+          "optional": true
+      },
+      "Splunk_SA_Scientific_Python_darwin_x86_64": {
+          "version": "1.3+",
+          "targetOS": ["_mac"],
+          "optional": true
+      }
+  },
+  "tasks": null,
+  "inputGroups": null,
+  "incompatibleApps": null,
+  "platformRequirements": {
+    "splunk": {
+      "Enterprise": "6.5+"
+    }
+  },
+  "supportedDeployments": [
+    "_standalone",
+    "_distributed",
+    "_search_head_clustering"
+  ],
+  "targetWorkloads": [
+    "_search_heads"
+  ]
+}
